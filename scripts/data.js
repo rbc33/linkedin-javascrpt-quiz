@@ -1,4 +1,4 @@
-questions = [
+const questions = [
 	{
 		topic: 'JavaScript',
 		num: 1,
@@ -5322,3 +5322,4 @@ questions = [
 		correct_answer: '`<ul>`',
 	},
 ]
+export default questions
