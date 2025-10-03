@@ -1,11 +1,11 @@
 import { marked } from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js'
 
 export class Question {
-	constructor(topic, num, head, body, options, correct_answer) {
+	constructor(topic, num, head, options, correct_answer) {
 		this.topic = topic
 		this.num = num
 		this.head = head
-		this.body = body ? marked.parse(body) : null
+		// this.body = body ? marked.parse(body) : null
 
 		this.options = options
 		this.correct_answer = correct_answer
