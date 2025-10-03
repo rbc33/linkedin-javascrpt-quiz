@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.central {
+	width: 80%;
+	max-width: 800px;
+	padding: 2rem;
+}
+
+.question {
+	list-style: none;
+}
+
+.question li {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}

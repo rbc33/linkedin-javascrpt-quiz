@@ -2235,14 +2235,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 37,
-		head: 'The flex-direction property is used to specify the direction in which flex items are displayed. What are the values used to specify the direction of the items in the following examples?',
-		body: '![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-1.png?raw=png)\n- Example 1: `flex-direction: row;`\n- Example 2: `flex-direction: row-reverse;`\n- Example 3: `flex-direction: column;`\n- Example 4: `flex-direction: column-reverse;`\n- Example 1: `flex-direction: row-reverse;`\n- Example 2: `flex-direction: row;`\n- Example 3: `flex-direction: column-reverse;`\n- Example 4: `flex-direction: column;`\n- Example 1: `flex-direction: row;`\n- Example 2: `flex-direction: row-reverse;`\n- Example 3: `flex-direction: column;`\n- Example 4: `flex-direction: reverse-column;`\n- Example 1: `flex-direction: column;`\n- Example 2: `flex-direction: column-reverse;`\n- Example 3: `flex-direction: row;`\n- Example 4: `flex-direction: row-reverse;`',
-		options: ['&shy;', '&shy;', '&shy;', '&shy;'],
-		correct_answer: '&shy;',
-	},
-	{
-		topic: 'CSS',
 		num: 38,
 		head: 'There are two sibling combinators that can be used to select elements contained within the same parent element; the general sibling combinator (~) and the adjacent sibling combinator (+). Referring to the example below, which elements will the styles be applied to?',
 		body: '```css\nh2 ~ p {\ncolor: blue;\n}\nh2 + p {\nbackground: beige;\n}\n```\n```HTML\n<section>\n<p>paragraph 1</p>\n<h2>Heading</h2>\n<p>paragraph 2</p>\n<p>paragraph 3</p>\n</section>\n```\nNote: a variant of the question below.',
@@ -2261,19 +2253,6 @@ const questions = [
 		body: '```css\nh2 ~ p {\ncolor: blue;\n}\n```\n```HTML\n<section>\n<p>P1</p>\n<h2>H2</h2>\n<p>P3</p>\n<p>P4</p>\n</section>\n```',
 		options: ['P3', 'P1, P3 and P4', 'P3 and P4', 'P1'],
 		correct_answer: 'P3 and P4',
-	},
-	{
-		topic: 'CSS',
-		num: 40,
-		head: 'When using Flexbox, the "justify-content" property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?',
-		body: '![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-2.png?raw=png)',
-		options: [
-			'justify-content: space-around;',
-			'justify-content: center;',
-			'justify-content: auto;',
-			'justify-content: space-between;',
-		],
-		correct_answer: 'justify-content: space-between;',
 	},
 	{
 		topic: 'CSS',
@@ -3117,20 +3096,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 111,
-		head: 'In this image, the blue box and sample text are both contained within the same parent element. The blue box is floated on the left margin of the container. Why is it not contained in the container?',
-		body: '![Sample text](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-3.png?raw=png)',
-		options: [
-			'Floating the blue box increased its height.',
-			'Floating the blue box on the left also moves it down.',
-			'Floating the blue box actually shifts it to the right and down.',
-			'Floating the blue box took it out of document flow and the container is sized only to the sample text.',
-		],
-		correct_answer:
-			'Floating the blue box took it out of document flow and the container is sized only to the sample text.',
-	},
-	{
-		topic: 'CSS',
 		num: 112,
 		head: 'Given this code, which CSS declaration of .overlay will span the entire width and height of its container?',
 		body: '```css\n<style>\n.container {\nposition: relative;\nheight: 200px;\nwidth: 200px;\nborder: 1px solid black;\n}\n</style>\n<div class="container"><div class="overlay"></div></div>\n```\n```css\n.overlay {\nposition: static;\ntop: 200px;\nbottom: 200px;\nright: 200px;\nleft: 200px;\nbackground-color: rgba(0, 0, 0, 0.5);\n}\n```\n```css\n.overlay {\nposition: absolute;\ntop: 200px;\nbottom: 200px;\nright: 200px;\nleft: 200px;\nbackground-color: rgba(0, 0, 0, 0.5);\n}\n```\n```css\n.overlay {\nposition: static;\ntop: 0;\nbottom: 0;\nright: 0;\nleft: 0;\nbackground-color: rgba(0, 0, 0, 0.5);\n}\n```\n```css\n.overlay {\nposition: absolute;\ntop: 0;\nbottom: 0;\nright: 0;\nleft: 0;\nbackground-color: rgba(0, 0, 0, 0.5);\n}\n```',
@@ -3426,14 +3391,6 @@ const questions = [
 		body: '```HTML\n<style>\n#tall-text {\ndisplay: inline;\nfont-size: 20px;\nheight: 200px;\n}\n</style>\n\n<p id="tall-text">Did I grow?</p>\n```',
 		options: ['200px', '20px', '180px', '220px'],
 		correct_answer: '20px',
-	},
-	{
-		topic: 'CSS',
-		num: 140,
-		head: 'Which style rule will place an X within the grid to win the game?',
-		body: '![A](img/Q-141.png?raw=png)\ncolumn: 3;\ngrid-column: 3;\ncolumn: 2;\ngrid-column: 2;',
-		options: ['row: 3;', 'grid-row: 3;', 'row: 2;', 'grid-row: 2;'],
-		correct_answer: 'grid-row: 3;',
 	},
 	{
 		topic: 'CSS',
@@ -3910,14 +3867,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 11,
-		head: 'What is the best way to code the sample shown?',
-		body: '![Sample text](images/ss-2.png?raw=true)\n```HTML\n<details>\n<summary>Parmesan Deviled Eggs</summary>\n<p>\nThese delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n</p>\n</details>\n```\n```HTML\n<h4>▸ Parmesan Deviled Eggs</h4>\n<p>\nThese delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n</p>\n```\n```HTML\n<details open>\n<summary>Parmesan Deviled Eggs</summary>\n<p>\nThese delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n</p>\n</details>\n```\n```HTML\n<details>\n<h4>▸ Parmesan Deviled Eggs</h4>\n<p>\nThese delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n</p>\n</details>\n```',
-		options: ['A', 'B', 'C', 'D'],
-		correct_answer: 'C',
-	},
-	{
-		topic: 'HTML',
 		num: 12,
 		head: 'What is the purpose of the `<samp>` element?',
 		body: null,
@@ -4017,19 +3966,7 @@ const questions = [
 		options: ['es', 'es-spanish', 'es-es', 'spanish'],
 		correct_answer: 'es',
 	},
-	{
-		topic: 'HTML',
-		num: 21,
-		head: 'Review the text in the red box in the image shown. What is the best way to code this in HTML?',
-		body: '![Image of footer](images/ss-3.png?raw=true)',
-		options: [
-			'ordered list',
-			'unordered list inside a nav element',
-			'ordered list inside a nav element',
-			'unordered list',
-		],
-		correct_answer: 'unordered list',
-	},
+
 	{
 		topic: 'HTML',
 		num: 22,
@@ -4065,14 +4002,6 @@ const questions = [
 		],
 		correct_answer:
 			'It displays image1.jpg at 1000px and higher, image2.jpg at 750-999px, and image3.jpg at 749px and lower.',
-	},
-	{
-		topic: 'HTML',
-		num: 25,
-		head: 'What code will produce this table?',
-		body: '![Table with yellow background](images/ss-4.png?raw=true)\n```HTML\n<table>\n<scope cols="2" style="background-color: yellow">\n<tr>\n<th>Col 1</th>\n<th>Col 2</th>\n<th>Col 3</th>\n</tr>\n<tr>\n<td>first</td>\n<td>second</td>\n<td>third</td>\n</tr>\n</table>\n```\n```HTML\n<table>\n<colgroup span="2" style="background-color: yellow">\n<tr>\n<th>Col 1</th>\n<th>Col 2</th>\n<th>Col 3</th>\n</tr>\n<tr>\n<td>first</td>\n<td>second</td>\n<td>third</td>\n</tr>\n</table>\n```\n```HTML\n<table>\n<group cols="2" style="background-color: yellow">\n<tr scope="row">\n<th>Col 1</th>\n<th>Col 2</th>\n<th>Col 3</th>\n</tr>\n<tr scope="row">\n<td>first</td>\n<td>second</td>\n<td>third</td>\n</tr>\n</table>\n```\n```HTML\n<table>\n<columns colspan="2" style="background-color: yellow">\n<tr>\n<th>Col 1</th>\n<th>Col 2</th>\n<th>Col 3</th>\n</tr>\n<tr>\n<td>first</td>\n<td>second</td>\n<td>third</td>\n</tr>\n</table>\n```',
-		options: ['A', 'B', 'C', 'D'],
-		correct_answer: 'B',
 	},
 	{
 		topic: 'HTML',
@@ -4168,27 +4097,11 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 34,
-		head: 'What is the correctly nested markup for this list?',
-		body: '![Sample list](images/ss-6.png?raw=true)\n```HTML\n<ul>\n<li>\noffice\n<ol style="circle">\n<li>staple</li>\n<li>paper</li>\n</ol>\n</li>\n<li>\ngroceries\n<ol style="circle">\n<li>milk</li>\n</ol>\n</li>\n</ul>\n```\n```HTML\n<ul>\n<li>\nOffice Supplies\n<ul>\n<li>Stapler</li>\n<li>Paper clips</li>\n</ul>\n</li>\n<li>\nGroceries\n<ul>\n<li>Milk</li>\n</ul>\n</li>\n</ul>\n```\n```HTML\n<ul>\n<li>office</li>\n<li>staple</li>\n<li>paper</li>\n<li>groceries</li>\n<li>milk</li>\n</ul>\n```',
-		options: ['A', 'B', 'C'],
-		correct_answer: 'B',
-	},
-	{
-		topic: 'HTML',
 		num: 35,
 		head: 'What should fill in the blank below?',
 		body: '```HTML\n<link href="phone.css" rel="stylesheet" _____="print" />\n```',
 		options: ['title', 'type', 'device', 'media'],
 		correct_answer: 'media',
-	},
-	{
-		topic: 'HTML',
-		num: 36,
-		head: 'What is the semantically correct way to mark up this layout?',
-		body: '![quote](images/ss-5.png?raw=true)\n```HTML\n<p>\n"Making money is what you have to do to sustain a business—being driven to make something of value\nand purpose is much more powerful."\n</p>\n<p><em>Lynda Weinman</em></p>\n```\n```HTML\n<blockquote>\n<q\n>"Making money is what you have to do to sustain a business—being driven to make something of\nvalue and purpose is much more powerful."</q\n>\n<cite><em>Lynda Weinman</em></cite>\n</blockquote>\n```\n```html\n<blockquote>\n<p>\n"Making money is what you have to do to sustain a business—being driven to make something of\nvalue and purpose is much more powerful."\n</p>\n<cite>Lynda Weinman</cite>\n</blockquote>\n```\n```html\n<section>\n<q\n>"Making money is what you have to do to sustain a business—being driven to make something of\nvalue and purpose is much more powerful."</q\n>\n<cite>Lynda Weinman</cite>\n</section>\n```',
-		options: ['A', 'B', 'C', 'D'],
-		correct_answer: 'C',
 	},
 	{
 		topic: 'HTML',
@@ -4274,14 +4187,6 @@ const questions = [
 		body: '`The <html> tag is the root element of an HTML document, which means that it contains all the contents and tags of the HTML document within it. The HTML element represents the root of a document.`\n1. [Source](https://www.interviewbit.com/html-mcq/)\n2. [Source](https://www.w3.org/TR/2010/WD-html-markup-20100624/html.html)',
 		options: ['`<!DOCTYPE html>`', '`<html>`', '`<body>`', '`<root>`'],
 		correct_answer: '`<html>`',
-	},
-	{
-		topic: 'HTML',
-		num: 44,
-		head: 'Which code snippet creates the layout shown, starting at `<table>` and ending at `</table>`?',
-		body: '![Table](images/ss-1.png?raw=true \'table\')\n```HTML\n<tr>\n<td>Table cell 1</td>\n<td>Table cell 2</td>\n</tr>\n<tr>\n<td rowspan="2">Table cell 3</td>\n</tr>\n```\n```HTML\n<tr>\n<td>Table cell 1</td>\n<td>Table cell 2</td>\n<td>Table cell 3</td>\n</tr>\n```\n```HTML\n<tr>\n<td>Table cell 1</td>\n<td>Table cell 2</td>\n</tr>\n<tr>\n<td colspan="2">Table cell 3</td>\n</tr>\n```\n```HTML\n<tr>\n<td>Table cell 1</td>\n<td>Table cell 2</td>\n</tr>\n<tr>\n<td>Table cell 3</td>\n</tr>\n```',
-		options: ['A', 'B', 'C', 'D'],
-		correct_answer: 'C',
 	},
 	{
 		topic: 'HTML',
@@ -4563,19 +4468,7 @@ const questions = [
 		options: ['A', 'B', 'C', 'D'],
 		correct_answer: 'C',
 	},
-	{
-		topic: 'HTML',
-		num: 68,
-		head: 'Given the file and directory structure shown here, what is the correct element to place in the file profit.html to link to info.html?',
-		body: '![Image of footer](images/ss-7.png?raw=true)',
-		options: [
-			'`<a href="../work/info.html">See Information </a>`',
-			'`<a href="../info.html">See Information </a>`',
-			'`<a href="../../info.html">See Information </a>`',
-			'`<a href="info.html">See Information </a>`',
-		],
-		correct_answer: '`<a href="../info.html">See Information </a>`',
-	},
+
 	{
 		topic: 'HTML',
 		num: 69,
@@ -4659,14 +4552,6 @@ const questions = [
 		body: '```html\n<p>\n<a href="index.html">Home</a>\n<a href="about.html">About</a>\n<a href="contact.html">Contact</a>\n</p>\n```\n```html\n<nav>\n<a href="index.html">Home</a>\n<a href="about.html">About</a>\n<a href="contact.html">Contact</a>\n</nav>\n```\n```html\n<nav>\n<ol>\n<li><a href="index.html">Home</a></li>\n<li><a href="about.html">About</a></li>\n<li><a href="contact.html">Contact</a></li>\n</ol>\n</nav>\n```\n```html\n<nav>\n<ul>\n<li><a href="index.html">Home</a></li>\n<li><a href="about.html">About</a></li>\n<li><a href="contact.html">Contact</a></li>\n</ul>\n</nav>\n```',
 		options: ['A', 'B', 'C', 'D'],
 		correct_answer: 'D',
-	},
-	{
-		topic: 'HTML',
-		num: 76,
-		head: 'Which choice is the best way to mark up this layout?',
-		body: '![Image of footer](images/ss-8.png?raw=true)\n```HTML\n<h4>Mailing Address</h4>\n<address>\n6410 Via Real <br />\nCarpinteria, CA 93013<br />\n<a href="mailto:info@linkedin.com">info@linkedin.com</a>\n</address>\n```\n```HTML\n<h4><strong>Mailing Address</h4>\n<address><em>\n6410 Via Real <br>\nCarpinteria, CA 93013<br>\n<a href="mailto:info@linkedin.com">info@linkedin.com</a>\n</em></address>\n```\n```HTML\n<h4>Mailing Address</h4>\n<p>\n<em>\n6410 Via Real <br />\nCarpinteria, CA 93013<br />\n<a href="mailto:info@linkedin.com">info@linkedin.com</a>\n</em>\n</p>\n```\n```HTML\n<p><strong>Mailing Address</strong></p>\n<p>\n<em>\n6410 Via Real <br />\nCarpinteria, CA 93013<br />\n<a href="mailto:info@linkedin.com">info@linkedin.com</a>\n</em>\n</p>\n```\n`The <address> tag defines the contact information for the author/owner of a document or an article. The contact information can be an email address, URL, physical address, phone number, social media handle, etc. The text in the <address> element usually renders in italics, and browsers will always add a line break before and after the <address> element.`',
-		options: ['A', 'B', 'C', 'D'],
-		correct_answer: 'A',
 	},
 	{
 		topic: 'HTML',
