@@ -40,10 +40,10 @@ quiz.questions.forEach((question, i) => {
 		optionsList.appendChild(br)
 		optionInput.addEventListener('click', () => {
 			if (optionInput.value === question.correct_answer) {
-				optionInput.classList.add('correct')
+				optionsList.classList.add('correct')
 				console.log('correct')
 			} else {
-				optionInput.classList.remove('correct')
+				optionsList.classList.remove('correct')
 				console.log('wrong')
 			}
 		})
