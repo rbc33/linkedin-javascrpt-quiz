@@ -9,6 +9,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: rgb(14, 81, 180);
 }
 
 .central {
@@ -26,6 +27,8 @@ body {
 	padding: 1rem;
 	border: 1px solid #ccc;
 	border-radius: 4px;
+	background-color: #fff;
+	font-size: 1.25rem;
 }
 input[type='checkbox'] {
 	transform: scale(2);
@@ -46,6 +49,7 @@ input[type='checkbox'] {
 
 input {
 	margin-right: 1rem;
+	margin-left: 1rem;
 }
 
 .start-button {
