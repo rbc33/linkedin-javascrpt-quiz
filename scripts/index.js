@@ -128,13 +128,5 @@ resetButton.addEventListener('click', () => {
 	ul.style.display = 'none'
 	startButton.style.display = 'block'
 	dialog.close()
-	const questionsInputs = document.querySelectorAll('.choice')
-	questionsInputs.forEach((q) => {
-		q.checked = false
-		q.disabled = false
-	})
-	const divs = document.querySelectorAll('li ul div')
-	divs.forEach((d) => {
-		d.style.backgroundColor = 'transparent'
-	})
+	ul.innerHTML = ''
 })
