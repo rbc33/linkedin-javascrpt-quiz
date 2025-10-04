@@ -2,6 +2,8 @@ import data from './data.js'
 import { Question } from './question.js'
 import { Quiz } from './quiz.js'
 
+const body = document.querySelector('body')
+
 const questions = data
 	.map((q) => {
 		if (!q.body) {
@@ -56,6 +58,8 @@ topics.forEach((t) => {
 })
 let answered = 0
 startButton.addEventListener('click', () => {
+	body.style.backgroundColor = 'rgb(14,81,180)'
+
 	if (selectedTopics.size > 0) {
 		// Filter questions by selected topics
 		quiz.filterAndShuffle(...selectedTopics)
@@ -129,4 +133,5 @@ resetButton.addEventListener('click', () => {
 	startButton.style.display = 'block'
 	dialog.close()
 	ul.innerHTML = ''
+	body.style.backgroundColor = '#fff'
 })
