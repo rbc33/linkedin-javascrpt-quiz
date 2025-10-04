@@ -20,6 +20,8 @@ ul.style.display = 'none'
 
 const selectedTopics = new Set()
 
+const dialog = document.getElementById('favDialog')
+
 // Create start button
 const startButton = document.createElement('button')
 startButton.textContent = 'Start Quiz'
@@ -44,15 +46,15 @@ topics.forEach((t) => {
 	topic.appendChild(label)
 	topic.appendChild(br)
 	console.log({ input })
-	input.addEventListener('change', (e) => {
-		if (e.target.checked) {
-			selectedTopics.add(e.target.value)
+	input.addEventListener('change', () => {
+		if (input.checked) {
+			selectedTopics.add(input.value)
 		} else {
-			selectedTopics.delete(e.target.value)
+			selectedTopics.delete(input.value)
 		}
-		console.log(selectedTopics)
 	})
 })
+let answered = 0
 startButton.addEventListener('click', () => {
 	if (selectedTopics.size > 0) {
 		// Filter questions by selected topics
@@ -61,10 +63,9 @@ startButton.addEventListener('click', () => {
 		// Render filtered questions
 		quiz.questions.forEach((question, i) => {
 			const li = document.createElement('li')
-			console.log({ i })
 
 			const head = document.createElement('h3')
-			head.textContent = question.head
+			head.textContent = `${i + 1} - ${question.head}`
 			li.appendChild(head)
 
 			const optionsList = document.createElement('ul')
@@ -100,6 +101,14 @@ startButton.addEventListener('click', () => {
 						if (op.value === question.correct_answer)
 							op.parentNode.style.backgroundColor = '#7CFC00'
 					})
+					answered++
+					const correct = document.querySelectorAll('.correct')
+					if (answered === 25) {
+						// alert(`You have ${correct.length} of 25 and ${answered}`)
+						const p = dialog.querySelector('.result')
+						p.textContent = `You have ${correct.length} correct of 25`
+						dialog.showModal()
+					}
 				})
 			})
 			li.appendChild(optionsList)
@@ -112,4 +121,10 @@ startButton.addEventListener('click', () => {
 		startButton.style.display = 'none'
 	}
 })
-const answers = document.querySelectorAll('inputs')
+const resetButton = document.querySelector('#reset')
+resetButton.addEventListener('click', () => {
+	topic.style.display = 'block'
+	ul.style.display = 'none'
+	startButton.style.display = 'block'
+	dialog.close()
+})
