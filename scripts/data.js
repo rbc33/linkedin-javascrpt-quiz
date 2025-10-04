@@ -1,7 +1,6 @@
 const questions = [
 	{
 		topic: 'JavaScript',
-		num: 1,
 		head: 'Which operator returns true if the two compared values are not equal?',
 		body: null,
 		options: ['`<>`', '`~`', '`==!`', '`!==`'],
@@ -9,7 +8,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 2,
 		head: 'How is a forEach statement different from a for statement?',
 		body: null,
 		options: [
@@ -23,7 +21,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 3,
 		head: 'Review the code below. Which statement calls the addTax function and passes 50 as an argument?',
 		body: '```js\nfunction addTax(total) {\nreturn total * 1.05;\n}\n```',
 		options: [
@@ -36,7 +33,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 4,
 		head: 'Which statement is the correct way to create a variable called rate and assign it the value 100?',
 		body: null,
 		options: [
@@ -49,7 +45,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 5,
 		head: 'Which statement creates a new object using the Person constructor? Which statement creates a new Person object called "student"?',
 		body: null,
 		options: [
@@ -62,7 +57,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 6,
 		head: "When would the final statement in the code shown be logged to the console? When would 'results shown' be logged to the console?",
 		body: "```js\nlet modal = document.querySelector('#result');\nsetTimeout(function () {\nmodal.classList.remove('hidden');\n}, 10000);\nconsole.log('Results shown');\n```",
 		options: [
@@ -75,7 +69,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 7,
 		head: 'Which snippet could you add to this code to print "food" to the console?',
 		body: "```js\nclass Animal {\nstatic belly = [];\neat() {\nAnimal.belly.push('food');\n}\n}\nlet a = new Animal();\na.eat();\nconsole.log(/* Snippet Here */); //Prints food\n```",
 		options: [
@@ -88,7 +81,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 8,
 		head: "You've written the code shown to log a set of consecutive values, but it instead results in the value 5, 5, 5, and 5 being logged to the console. Which revised version of the code would result in the value 1, 2, 3 and 4 being logged?",
 		body: '```js\nfor (var i = 1; i <= 4; i++) {\nsetTimeout(function () {\nconsole.log(i);\n}, i * 10000);\n}\n```\n```js\nfor (var i = 1; i <= 4; i++) {\n(function (i) {\nsetTimeout(function () {\nconsole.log(j);\n}, j * 1000);\n})(j);\n}\n```\n```js\nfor (var i = 1; i <= 4; i++) {\nsetTimeout(function () {\nconsole.log(i);\n}, i * 1000);\n}\n```\n```js\nfor (var i = 1; i <= 4; i++) {\n(function (j) {\nsetTimeout(function () {\nconsole.log(j);\n}, j * 1000);\n})(i);\n}\n```\n```js\nfor (var j = 1; j <= 4; j++) {\nsetTimeout(function () {\nconsole.log(j);\n}, j * 1000);\n}\n```\n1. [Reference setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)\n2. [Reference immediately invoked anonymous functions](https://www.javascripttutorial.net/javascript-anonymous-functions/)',
 		options: ['`A`', '`B`', '`C`', '`D`', '`E`'],
@@ -96,7 +88,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 9,
 		head: 'How does a function create a closure?',
 		body: null,
 		options: [
@@ -109,7 +100,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 10,
 		head: 'Which statement creates a new function called discountPrice?',
 		body: '```js\nlet discountPrice = function (price) {\nreturn price * 0.85;\n};\n```\n```js\nlet discountPrice(price) {\nreturn price * 0.85;\n};\n```\n```js\nlet function = discountPrice(price) {\nreturn price * 0.85;\n};\n```\n```js\ndiscountPrice = function (price) {\nreturn price * 0.85;\n};\n```',
 		options: ['`A`', '`B`', '`C`', '`D`'],
@@ -117,7 +107,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 11,
 		head: 'What is the result in the console of running the code shown?',
 		body: "```js\nvar Storm = function () {};\nStorm.prototype.precip = 'rain';\nvar WinterStorm = function () {};\nWinterStorm.prototype = new Storm();\nWinterStorm.prototype.precip = 'snow';\nvar bob = new WinterStorm();\nconsole.log(bob.precip);\n```",
 		options: ['Storm()', 'undefined', "'rain'", "'snow'"],
@@ -125,7 +114,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 12,
 		head: 'You need to match a time value such as 12:00:32. Which of the following regular expressions would work for your code?',
 		body: '1. [Repeating characters](https://regexone.com/lesson/repeating_characters)\n2. [Kleene operators](https://regexone.com/lesson/kleene_operators)',
 		options: [
@@ -138,7 +126,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 13,
 		head: 'What is the result in the console of running this code?',
 		body: "```js\n'use strict';\nfunction logThis() {\nthis.desc = 'logger';\nconsole.log(this);\n}\nnew logThis();\n```",
 		options: ['`undefined`', '`window`', '`{desc: "logger"}`', '`function`'],
@@ -146,7 +133,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 14,
 		head: "How would you reference the text 'avenue' in the code shown?",
 		body: "```js\nlet roadTypes = ['street', 'road', 'avenue', 'circle'];\n```",
 		options: [
@@ -159,7 +145,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 15,
 		head: 'What is the result of running this statement?',
 		body: '```js\nconsole.log(typeof 42);\n```',
 		options: ["`'float'`", "`'value'`", "`'number'`", "`'integer'`"],
@@ -167,7 +152,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 16,
 		head: 'Which property references the DOM object that dispatched an event?',
 		body: null,
 		options: ['`self`', '`object`', '`target`', '`source`'],
@@ -175,7 +159,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 17,
 		head: "You're adding error handling to the code shown. Which code would you include within the if statement to specify an error message?",
 		body: '```js\nfunction addNumbers(x, y) {\nif (isNaN(x) || isNaN(y)) {\n}\n}\n```',
 		options: [
@@ -188,7 +171,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 18,
 		head: 'Which method converts JSON data to a JavaScript object?',
 		body: null,
 		options: [
@@ -201,7 +183,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 19,
 		head: 'When would you use a conditional statement?',
 		body: null,
 		options: [
@@ -215,7 +196,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 20,
 		head: 'What would be the result in the console of running this code?',
 		body: '```js\nfor (var i = 0; i < 5; i++) {\nconsole.log(i);\n}\n```',
 		options: ['1 2 3 4 5', '1 2 3 4', '0 1 2 3 4', '0 1 2 3 4 5'],
@@ -223,7 +203,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 21,
 		head: 'Which Object method returns an iterable that can be used to iterate over the properties of an object?',
 		body: null,
 		options: [
@@ -236,7 +215,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 22,
 		head: 'What will be logged to the console?',
 		body: "```js\nvar a = ['dog', 'cat', 'hen'];\na[100] = 'fox';\nconsole.log(a.length);\n```",
 		options: ['101', '3', '4', '100'],
@@ -244,7 +222,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 23,
 		head: 'What is one difference between collections created with Map and collections created with Object?',
 		body: null,
 		options: [
@@ -258,7 +235,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 24,
 		head: 'What is the value of dessert.type after executing this code?',
 		body: "```js\nconst dessert = { type: 'pie' };\ndessert.type = 'pudding';\n```",
 		options: ['pie', 'The code will throw an error.', 'pudding', 'undefined'],
@@ -266,7 +242,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 25,
 		head: '0 && hi',
 		body: null,
 		options: ['ReferenceError', 'true', '0', 'false'],
@@ -274,7 +249,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 26,
 		head: 'Which of the following operators can be used to do a short-circuit evaluation?',
 		body: null,
 		options: ['`++`', '`--`', '`==`', '`||`'],
@@ -282,7 +256,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 27,
 		head: 'Which statement sets the Person constructor as the parent of the Student constructor in the prototype chain?',
 		body: null,
 		options: [
@@ -295,7 +268,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 28,
 		head: 'Why would you include a "use strict" statement in a JavaScript file?',
 		body: null,
 		options: [
@@ -309,7 +281,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 29,
 		head: 'Which Variable-defining keyword allows its variable to be accessed (as undefined) before the line that defines it?',
 		body: null,
 		options: ['all of them', '`const`', '`var`', '`let`'],
@@ -317,7 +288,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 30,
 		head: 'Which of the following values is not a Boolean false?',
 		body: null,
 		options: [
@@ -330,7 +300,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 31,
 		head: 'Which of the following is not a keyword in JavaScript?',
 		body: null,
 		options: ['`this`', '`catch`', '`function`', '`array`'],
@@ -338,7 +307,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 32,
 		head: 'Which variable is an implicit parameter for every function in JavaScript?',
 		body: null,
 		options: ['Arguments', 'args', 'argsArray', 'argumentsList'],
@@ -346,7 +314,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 33,
 		head: 'For the following class, how do you get the value of 42 from an instance of X?',
 		body: '```js\nclass X {\nget Y() {\nreturn 42;\n}\n}\nvar x = new X();\n```',
 		options: ["`x.get('Y')`", '`x.Y`', '`x.Y()`', '`x.get().Y`'],
@@ -354,7 +321,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 34,
 		head: 'What is the result of running this code?',
 		body: '```js\nsum(10, 20);\ndiff(10, 20);\nfunction sum(x, y) {\nreturn x + y;\n}\n\nlet diff = function (x, y) {\nreturn x - y;\n};\n```',
 		options: [
@@ -367,7 +333,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 35,
 		head: 'Why is it usually better to work with Objects instead of Arrays to store a collection of records?',
 		body: null,
 		options: [
@@ -381,7 +346,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 36,
 		head: 'Which statement is true about the "async" attribute for the HTML script tag?',
 		body: null,
 		options: [
@@ -394,7 +358,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 37,
 		head: 'How do you import the lodash library making it top-level Api available as the "\\_" variable?',
 		body: null,
 		options: [
@@ -407,7 +370,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 38,
 		head: 'What does the following expression evaluate to?',
 		body: '```js\n[] == [];\n```',
 		options: ['true', 'undefined', '[]', 'false'],
@@ -415,7 +377,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 39,
 		head: 'What type of function can have its execution suspended and then resumed at a later point?',
 		body: null,
 		options: [
@@ -428,7 +389,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 40,
 		head: 'What will this code print?',
 		body: '```js\nvar v = 1;\nvar f1 = function () {\nconsole.log(v);\n};\n\nvar f2 = function () {\nvar v = 2;\nf1();\n};\n\nf2();\n```',
 		options: [
@@ -441,7 +401,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 41,
 		head: 'Which statement is true about Functional Programming?',
 		body: null,
 		options: [
@@ -454,7 +413,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 42,
 		head: "Your code is producing the error: TypeError: Cannot read property 'reduce' of undefined. What does that mean?",
 		body: null,
 		options: [
@@ -468,7 +426,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 43,
 		head: 'How many prototype objects are in the chain for the following array?',
 		body: '`let arr = [];`',
 		options: ['3', '2', '0', '1'],
@@ -476,7 +433,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 44,
 		head: 'Which choice is _not_ a unary operator?',
 		body: null,
 		options: ['`typeof`', '`delete`', '`instanceof`', '`void`'],
@@ -484,7 +440,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 45,
 		head: 'What type of scope does the end variable have in the code shown?',
 		body: '```js\nvar start = 1;\nif (start === 1) {\nlet end = 2;\n}\n```',
 		options: ['conditional', 'block', 'global', 'function'],
@@ -492,7 +447,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 46,
 		head: 'What will the value of y be in this code:',
 		body: "```js\nconst x = 6 % 2;\nconst y = x ? 'One' : 'Two';\n```",
 		options: ['One', 'undefined', 'TRUE', 'Two'],
@@ -500,7 +454,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 47,
 		head: 'Which keyword is used to create an error?',
 		body: null,
 		options: ['`throw`', '`exception`', '`catch`', '`error`'],
@@ -508,7 +461,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 48,
 		head: "What's one difference between the async and defer attributes of the HTML script tag?",
 		body: null,
 		options: [
@@ -522,7 +474,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 49,
 		head: 'The following program has a problem. What is it?',
 		body: '```js\nvar a;\nvar b = (a = 3) ? true : false;\n```',
 		options: [
@@ -536,7 +487,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 50,
 		head: 'Which statement references the DOM node created by the code shown?',
 		body: '```html\n<p class="pull">lorem ipsum</p>\n```',
 		options: [
@@ -549,7 +499,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 51,
 		head: 'What value does this code return?',
 		body: '```js\nlet answer = true;\nif (answer === false) {\nreturn 0;\n} else {\nreturn 10;\n}\n```',
 		options: ['10', 'true', 'false', '0'],
@@ -557,7 +506,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 52,
 		head: 'What is the result in the console of running the code shown?',
 		body: '```js\nvar start = 1;\nfunction setEnd() {\nvar end = 10;\n}\nsetEnd();\nconsole.log(end);\n```',
 		options: ['10', '0', 'ReferenceError', 'undefined'],
@@ -565,7 +513,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 53,
 		head: 'What will this code log in the console?',
 		body: "```js\nfunction sayHello() {\nconsole.log('hello');\n}\n\nconsole.log(sayHello.prototype);\n```",
 		options: [
@@ -578,7 +525,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 54,
 		head: 'Which collection object allows unique value to be inserted only once?',
 		body: null,
 		options: ['Object', 'Set', 'Array', 'Map'],
@@ -586,7 +532,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 55,
 		head: 'What two values will this code print?',
 		body: '```js\nfunction printA() {\nconsole.log(answer);\nvar answer = 1;\n}\nprintA();\nprintA();\n```',
 		options: [
@@ -599,7 +544,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 56,
 		head: 'How does the `forEach()` method differ from a `for` statement?',
 		body: null,
 		options: [
@@ -613,7 +557,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 57,
 		head: 'Which choice is an incorrect way to define an arrow function that returns an empty object?',
 		body: null,
 		options: ['=> `({})`', '=> `{}`', '=> `{ return {};}`', '=> `(({}))`'],
@@ -621,7 +564,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 58,
 		head: 'Why might you choose to make your code asynchronous?',
 		body: null,
 		options: [
@@ -635,7 +577,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 59,
 		head: 'Which expression evaluates to true?',
 		body: '1. [Reference booleans](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)\n2. [Reference 2 - booleans](https://www.scaler.com/topics/boolean-in-javascript/)',
 		options: ['`[3] == [3]`', "`3 == '3'`", "`3 != '3'`", "`3 === '3'`"],
@@ -643,7 +584,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 60,
 		head: 'Which of these is a valid variable name?',
 		body: null,
 		options: ['5thItem', 'firstName', 'grand total', 'function'],
@@ -651,7 +591,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 61,
 		head: 'Which method cancels event default behavior?',
 		body: null,
 		options: ['`cancel()`', '`stop()`', '`preventDefault()`', '`prevent()`'],
@@ -659,7 +598,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 62,
 		head: 'Which method do you use to attach one DOM node to another?',
 		body: null,
 		options: [
@@ -672,7 +610,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 63,
 		head: 'What statement can be used to skip an iteration in a loop?',
 		body: null,
 		options: ['`break`', '`pass`', '`skip`', '`continue`'],
@@ -680,7 +617,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 64,
 		head: 'Which choice is a valid example for an arrow function?',
 		body: null,
 		options: [
@@ -693,7 +629,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 65,
 		head: 'Which concept is defined as a template that can be used to generate different objects that share some shape and/or behavior?',
 		body: null,
 		options: ['class', 'generator function', 'map', 'proxy'],
@@ -701,7 +636,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 66,
 		head: 'How do you add a comment to JavaScript code?',
 		body: null,
 		options: [
@@ -714,7 +648,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 67,
 		head: 'If you attempt to call a value as a function but the value is not a function, what kind of error would you get?',
 		body: null,
 		options: ['TypeError', 'SystemError', 'SyntaxError', 'LogicError'],
@@ -722,7 +655,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 68,
 		head: 'Which method is called automatically when an object is initialized?',
 		body: null,
 		options: ['create()', 'new()', 'constructor()', 'init()'],
@@ -730,7 +662,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 69,
 		head: 'What is the result of running the statement shown?',
 		body: '```js\nlet a = 5;\nconsole.log(++a);\n```',
 		options: ['4', '10', '6', '5'],
@@ -738,7 +669,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 70,
 		head: "You've written the event listener shown below for a form button, but each time you click the button, the page reloads. Which statement would stop this from happening?",
 		body: "```js\nbutton.addEventListener(\n'click',\nfunction (e) {\nbutton.className = 'clicked';\n},\nfalse,\n);\n```",
 		options: [
@@ -751,7 +681,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 71,
 		head: 'Which statement represents the starting code converted to an IIFE?',
 		body: null,
 		options: [
@@ -763,7 +692,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 72,
 		head: 'Which statement selects all img elements in the DOM tree?',
 		body: null,
 		options: [
@@ -776,7 +704,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 73,
 		head: 'Why would you choose an asynchronous structure for your code?',
 		body: null,
 		options: [
@@ -790,7 +717,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 74,
 		head: 'What is the HTTP verb to request the contents of an existing resource?',
 		body: null,
 		options: ['DELETE', 'GET', 'PATCH', 'POST'],
@@ -798,7 +724,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 75,
 		head: 'Which event is fired on a text field within a form when a user tabs to it, or clicks or touches it?',
 		body: null,
 		options: ['focus', 'blur', 'hover', 'enter'],
@@ -806,7 +731,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 76,
 		head: 'What is the result in the console of running this code?',
 		body: '```js\nfunction logThis() {\nconsole.log(this);\n}\nlogThis();\n```',
 		options: ['function', 'undefined', 'Function.prototype', 'window'],
@@ -814,7 +738,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 77,
 		head: 'Which class-based component is equivalent to this function component?',
 		body: '```js\nconst Greeting = ({ name }) => <h1>Hello {name}!</h1>;\n```',
 		options: [
@@ -828,7 +751,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 78,
 		head: 'What is the output of this code?',
 		body: '```js\nvar obj;\nconsole.log(obj);\n```',
 		options: [
@@ -841,7 +763,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 79,
 		head: 'How would you use the TaxCalculator to determine the amount of tax on \\$50?',
 		body: '```js\nclass TaxCalculator {\nstatic calculate(total) {\nreturn total * 0.05;\n}\n}\n```',
 		options: [
@@ -854,7 +775,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 80,
 		head: 'What is wrong with this code?',
 		body: "```js\nconst foo = {\nbar() {\nconsole.log('Hello, world!');\n},\nname: 'Albert',\nage: 26,\n};\n```\n1. [Reference functions in javascript](https://www.w3schools.com/js/js_functions.asp)\n2. [Reference working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)",
 		options: [
@@ -867,7 +787,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 81,
 		head: 'What will be logged to the console?',
 		body: "```js\nconsole.log('I');\nsetTimeout(() => {\nconsole.log('love');\n}, 0);\nconsole.log('Javascript!');\n```\n```plaintext\nI\nJavascript!\nlove\n```\n```plaintext\nlove\nI\nJavascript!\n```\n```plaintext\nI\nlove\nJavascript!\n```\nhttps://developer.mozilla.org/en-US/docs/Web/API/setTimeout#reasons_for_delays_longer_than_specified especially see the 'late timeouts' section.",
 		options: [
@@ -880,7 +799,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 82,
 		head: 'What will this code log to the console?',
 		body: '```js\nconst foo = [1, 2, 3];\nconst [n] = foo;\nconsole.log(n);\n```',
 		options: [
@@ -893,7 +811,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 83,
 		head: 'How do you remove the property name from this object?',
 		body: "```js\nconst foo = {\nname: 'Albert',\n};\n```",
 		options: [
@@ -906,7 +823,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 84,
 		head: 'What is the difference between the `map()` and the `forEach()` methods on the Array prototype?',
 		body: '1. [Reference map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)\n2. [Reference Differences between forEach and for loop](https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)',
 		options: [
@@ -920,7 +836,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 85,
 		head: 'Which concept does this code illustrate?',
 		body: '```js\nfunction makeAdder(x) {\nreturn function (y) {\nreturn x + y;\n};\n}\n\nvar addFive = makeAdder(5);\nconsole.log(addFive(3));\n```',
 		options: ['overloading', 'closure', 'currying', 'overriding'],
@@ -928,7 +843,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 86,
 		head: 'Which tag pair is used in HTML to embed JavaScript?',
 		body: null,
 		options: [
@@ -941,7 +855,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 87,
 		head: 'If your app receives data from a third-party API, which HTTP response header must the server specify to allow exceptions to the same-origin policy?',
 		body: null,
 		options: [
@@ -954,7 +867,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 88,
 		head: 'What is the output of this code?',
 		body: "```js\nlet rainForests = ['Amazon', 'Borneo', 'Cerrado', 'Congo'];\nrainForests.splice(0, 2);\nconsole.log(rainForests);\n```",
 		options: [
@@ -967,7 +879,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 89,
 		head: 'Which missing line would allow you to create five variables(one,two,three,four,five) that correspond to their numerical values (1,2,3,4,5)?',
 		body: '```js\nconst numbers = [1, 2, 3, 4, 5];\n//MISSING LINE\n```',
 		options: [
@@ -980,7 +891,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 90,
 		head: 'What will this code print?',
 		body: '```js\nconst obj = {\na: 1,\nb: 2,\nc: 3,\n};\n\nconst obj2 = {\n...obj,\na: 0,\n};\n\nconsole.log(obj2.a, obj2.b);\n```',
 		options: [
@@ -993,7 +903,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 91,
 		head: 'Which line could you add to this code to print "jaguar" to the console?',
 		body: "```js\nlet animals = ['jaguar', 'eagle'];\n//Missing Line\nconsole.log(animals.pop()); //Prints jaguar\n```\nshift() - removes the FIRST element of an array and returns the removed item.\npop() - removes the LAST element of an array and returns the removed item.\nreverse() - reverses the order of the elements in an array.\nfilter() - get every element in the array that meets the condition.",
 		options: [
@@ -1006,7 +915,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 92,
 		head: 'What line is missing from this code?',
 		body: '```js\n//Missing Line\nfor (var i = 0; i < vowels.length; i++) {\nconsole.log(vowels[i]);\n//Each letter printed on a separate line as follows;\n//a\n//e\n//i\n//o\n//u\n}\n```',
 		options: [
@@ -1019,7 +927,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 93,
 		head: 'What will be logged to the console?',
 		body: "```js\nconst x = 6 % 2;\nconst y = x ? 'One' : 'Two';\nconsole.log(y);\n```",
 		options: ['undefined', 'One', 'true', 'Two'],
@@ -1027,7 +934,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 94,
 		head: 'How would you access the word It from this multidimensional array?',
 		body: '`let matrix = [["You","Can"],["Do","It"],["!","!","!"]];`',
 		options: [
@@ -1040,7 +946,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 95,
 		head: 'What does this code do?',
 		body: "```js\nconst animals = ['Rabbit', 'Dog', 'Cat'];\nanimals.unshift('Lizard');\n```",
 		options: [
@@ -1053,7 +958,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 96,
 		head: 'What is the output of this code?',
 		body: "```js\nlet x = 6 + 3 + '3';\nconsole.log(x);\n```",
 		options: ['93', '12', '66', '633'],
@@ -1061,7 +965,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 97,
 		head: 'Which statement can take a single expression as input and then look through a number of choices until one that matches that value is found?',
 		body: null,
 		options: ['else', 'when', 'if', 'switch'],
@@ -1069,7 +972,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 98,
 		head: 'Which statement prints "roar" to the console?',
 		body: "```js\nvar sound = 'grunt';\nvar bear = { sound: 'roar' };\nfunction roar() {\nconsole.log(this.sound);\n}\n```\n1. [Reference Apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)\n2. [Reference this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)\n3. [Reference bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)",
 		options: [
@@ -1082,7 +984,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 99,
 		head: 'Which choice is a valid example of an arrow function, assuming c is defined in the outer scope?',
 		body: null,
 		options: [
@@ -1095,7 +996,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 100,
 		head: 'Which statement correctly imports this code from some-file.js?',
 		body: '```js\n//some-file.js\nexport const printMe = (str) => console.log(str);\n```',
 		options: [
@@ -1108,7 +1008,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 101,
 		head: 'What will be the output of this code?',
 		body: '```js\nconst arr1 = [2, 4, 6];\nconst arr2 = [3, 5, 7];\n\nconsole.log([...arr1, ...arr2]);\n```',
 		options: [
@@ -1122,7 +1021,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 102,
 		head: 'Which method call is chained to handle a successful response returned by `fetch()`?',
 		body: null,
 		options: ['`done()`', '`then()`', '`finally()`', '`catch()`'],
@@ -1130,7 +1028,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 103,
 		head: 'Which choice is not an array method?',
 		body: null,
 		options: [
@@ -1143,7 +1040,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 104,
 		head: 'Which JavaScript loop ensures that at least a singular iteration will happen?',
 		body: null,
 		options: ['do…while', 'forEach', 'while', 'for'],
@@ -1151,7 +1047,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 105,
 		head: 'What will be logged to the console?',
 		body: "```js\nconsole.log(typeof 'blueberry');\n```",
 		options: ['`string`', '`array`', '`Boolean`', '`object`'],
@@ -1159,7 +1054,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 106,
 		head: 'What is the output that is printed when the div containing the text "Click Here" is clicked?',
 		body: '```html\n//HTML Markup\n<div id="A">\n<div id="B">\n<div id="C">Click Here</div>\n</div>\n</div>\n```\n```js\n//JavaScript\ndocument.querySelectorAll(\'div\').forEach((e) => {\ne.onclick = (e) => console.log(e.currentTarget.id);\n});\n```\n1. [Reference query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)\n2. [Reference events](https://developer.mozilla.org/en-US/docs/Web/Events)',
 		options: ['C B A', 'A', 'C', 'A B C'],
@@ -1167,7 +1061,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 107,
 		head: 'What will this code log to the console?',
 		body: '```js\nconst myNumbers = [1, 2, 3, 4, 5, 6, 7];\nconst myFunction = (arr) => {\nreturn arr.map((x) => x + 3).filter((x) => x < 7);\n};\nconsole.log(myFunction(myNumbers));\n```',
 		options: [
@@ -1180,7 +1073,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 108,
 		head: 'What does this code print to the console?',
 		body: '```js\nlet rainForestAcres = 10;\nlet animals = 0;\n\nwhile (rainForestAcres < 13 || animals <= 2) {\nrainForestAcres++;\nanimals += 2;\n}\n\nconsole.log(animals);\n```',
 		options: ['2', '4', '6', '8'],
@@ -1188,7 +1080,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 109,
 		head: 'Which snippet could you add to this code to print "YOU GOT THIS" to the console?',
 		body: "```js\nlet cipherText = [...'YZOGUT QGMORTZ MTRHTILS'];\nlet plainText = '';\n\n/* Missing Snippet */\n\nconsole.log(plainText); //Prints YOU GOT THIS\n```\n```js\nfor (let key of cipherText.keys()) {\nplainText += key % 2 === 0 ? key : ' ';\n}\n```\n```js\nfor (let [index, value] of cipherText.entries()) {\nplainText += index % 2 !== 0 ? value : '';\n}\n```\n```js\nfor (let [index, value] of cipherText.entries()) {\nplainText += index % 2 === 0 ? value : '';\n}\n```\n```js\nfor (let value of cipherText) {\nplainText += value;\n}\n```\n1. [Reference MDN JavaScript Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)\n2. [Reference MDN JavaScript Array entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)\n3. [Reference MDN JavaScript Remainder/Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)",
 		options: ['A', 'B', 'C', 'D'],
@@ -1196,7 +1087,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 110,
 		head: 'Which Pokemon will be logged to the console?',
 		body: "```js\nvar pokedex = ['Snorlax', 'Jigglypuff', 'Charmander', 'Squirtle'];\npokedex.pop();\nconsole.log(pokedex.pop());\n```",
 		options: ['Charmander', 'Jigglypuff', 'Snorlax', 'Squirtle'],
@@ -1204,7 +1094,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 111,
 		head: 'Which statement can be used to select the element from the DOM containing the text "The LinkedIn Learning library has great JavaScript courses" from this markup?',
 		body: '```html\n<h1 class="content">LinkedIn Learning</h1>\n<div class="content">\n<span class="content">The LinkedIn Learning library has great JavaScript courses!</span>\n</div>\n```',
 		options: [
@@ -1217,7 +1106,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 112,
 		head: 'Which value is not falsey?',
 		body: null,
 		options: ['`[]`', '`undefined`', '`0`', '`null`'],
@@ -1225,7 +1113,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 113,
 		head: 'What line of code causes this code segment to throw an error?',
 		body: '```js\nconst lion = 1;\nlet tiger = 2;\nvar bear;\n\n++lion;\nbear += lion + tiger;\ntiger++;\n```\n1. [Reference const in js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)\n2. [Reference TypeError: invalid assignment to const "x"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_const_assignment)',
 		options: [
@@ -1238,7 +1125,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 114,
 		head: 'What will be the value of `result` after running this code?',
 		body: "```js\nconst person = { name: 'Dave', age: 40, hairColor: 'blue' };\nconst result = Object.keys(person).map((x) => x.toUpperCase());\n```\n1. [Reference Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)\n2. [Reference Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)\n3. [Reference String.prototype.toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)",
 		options: [
@@ -1251,7 +1137,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 115,
 		head: 'Which snippet could you insert to this code to print "swim" to the console?',
 		body: '```js\nlet animals = ["eagle", "osprey", "salmon"];\nlet key = animal => animal === "salmon";\n\nif(/* Insert Snippet Here */){\nconsole.log("swim");\n}\n```',
 		options: [
@@ -1264,7 +1149,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 116,
 		head: 'What is the output of this code?',
 		body: '```js\nclass RainForest {\nstatic minimumRainFall = 60;\n}\n\nlet congo = new RainForest();\nRainForest.minimumRainFall = 80;\nconsole.log(congo.minimumRainFall);\n```',
 		options: [
@@ -1277,7 +1161,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 117,
 		head: 'How can you attempt to access the property `a.b` on `obj` without throwing an error if a is undefined?',
 		body: '```js\nlet obj = {};\n```',
 		options: ['`obj?.a.b`', '`obj.a?.b`', '`obj[a][b]`', '`obj.?a.?b`'],
@@ -1285,7 +1168,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 118,
 		head: 'What happens when you run this code?',
 		body: '```js\nif (true) {\nvar x = 5;\nconst y = 6;\nlet z = 7;\n}\nconsole.log(x + y + z);\n```',
 		options: [
@@ -1298,7 +1180,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 119,
 		head: 'What does this code print to the console?',
 		body: '```js\nconst x = [1, 2];\nconst y = [5, 7];\nconst z = [...x, ...y];\nconsole.log(z);\n```',
 		options: ['`[1,2,5,7]`', '`[[1, 2], [5, 7]]`', '`[2,7]`', '`[2,1,7,5]`'],
@@ -1306,7 +1187,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 120,
 		head: 'Given this code, which statement will be evaluated as false?',
 		body: '```js\nconst a = { x: 1 };\nconst b = { x: 1 };\n```',
 		options: ["`a['x'] === b['x']`", '`a != b`', '`a === b`', '`a.x === b.x`'],
@@ -1314,7 +1194,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 121,
 		head: 'What will this code log to the console?',
 		body: '```js\nconsole.log(typeof 41.1);\n```',
 		options: [
@@ -1327,7 +1206,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 122,
 		head: 'What is the output of this code?',
 		body: '```js\nlet scores = [];\nscores.push(1, 2);\nscores.pop();\nscores.push(3, 4);\nscores.pop();\nscore = scores.reduce((a, b) => a + b);\nconsole.log(score);\n```\n1. [Reference Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)\n2. [Reference Array.prototype.pop()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)\n3. [Reference Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)',
 		options: ['`3`', '`4`', '`6`', '`7`'],
@@ -1335,7 +1213,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 123,
 		head: 'What does this code print to the console?',
 		body: "```js\nlet bear = {\nsound: 'roar',\nroar() {\nconsole.log(this.sound);\n},\n};\n\nbear.sound = 'grunt';\nlet bearSound = bear.roar;\nbearSound();\n```",
 		options: [
@@ -1348,7 +1225,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 124,
 		head: 'What is the output of this code?',
 		body: "```js\nvar cat = { name: 'Athena' };\n\nfunction swap(feline) {\nfeline.name = 'Wild';\nfeline = { name: 'Tabby' };\n}\n\nswap(cat);\nconsole.log(cat.name);\n```",
 		options: ['undefined', 'Wild', 'Tabby', 'Athena'],
@@ -1356,7 +1232,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 125,
 		head: 'What will this code output to the log?',
 		body: "```js\nvar thing;\nlet func = (str = 'no arg') => {\nconsole.log(str);\n};\nfunc(thing);\nfunc(null);\n```",
 		options: ['null no arg', 'no arg no arg', 'null null', 'no arg null'],
@@ -1364,7 +1239,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 126,
 		head: 'What will this code print to the console?',
 		body: "```js\nconst myFunc = () => {\nconst a = 2;\nreturn () => console.log('a is ' + a);\n};\nconst a = 1;\nconst test = myFunc();\ntest();\n```",
 		options: ['a is 1', 'a is undefined', "It won't print anything.", 'a is 2'],
@@ -1372,7 +1246,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 127,
 		head: 'What will this code print to the console?',
 		body: '```js\nconst myFunc = (num1, num2 = 2, num3 = 2) => {\nreturn num1 + num2 + num3;\n};\nlet values = [1, 5];\nconst test = myFunc(2, ...values);\nconsole.log(test);\n```',
 		options: ['8', '6', '2', '12'],
@@ -1380,7 +1253,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 128,
 		head: 'Which code would you use to access the Irish flag?',
 		body: '```js\nvar flagsJSON =\n\'{ "countries" : [\' +\n\'{ "country":"Ireland" , "flag":"🇮🇪" },\' +\n\'{ "country":"Serbia" , "flag":"🇷🇸" },\' +\n\'{ "country":"Peru" , "flag":"🇵🇪" } ]}\';\n\nvar flagDatabase = JSON.parse(flagsJSON);\n```',
 		options: [
@@ -1393,7 +1265,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 129,
 		head: 'Which snippet allows the acresOfRainForest variable to increase?',
 		body: '```js\nlet conservation = true;\nlet deforestation = false;\nlet acresOfRainForest = 100;\nif (/* Snipped goes here */){\n++acresOfRainForest;\n}\n```',
 		options: [
@@ -1406,7 +1277,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 130,
 		head: 'Which of these evaluate to true?',
 		body: null,
 		options: ['Boolean("false")', 'Boolean("")', 'Boolean(0)', 'Boolean(NaN)'],
@@ -1414,7 +1284,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 131,
 		head: 'How would you add a data item named animal with a value of sloth to local storage for the current domain?',
 		body: null,
 		options: [
@@ -1427,7 +1296,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 132,
 		head: 'What value is printed to the console after this code execute?',
 		body: "```js\nlet cat = Object.create({ type: 'lion' });\ncat.size = 'large';\n\nlet copyCat = { ...cat };\ncat.type = 'tiger';\n\nconsole.log(copyCat.type, copyCat.size);\n```",
 		options: ['tiger large', 'lion undefined', 'undefined large', 'lion large'],
@@ -1435,7 +1303,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 133,
 		head: 'What does this code print to the console?',
 		body: "```js\nlet animals = [{ type: 'lion' }, 'tiger'];\nlet clones = animals.slice();\n\nclones[0].type = 'bear';\nclones[1] = 'sheep';\n\nconsole.log(animals[0].type, clones[0].type);\nconsole.log(animals[1], clones[1]);\n```\ntiger sheep\nsheep sheep\ntiger tiger\ntiger sheep",
 		options: ['bear bear', 'lion bear', 'bear bear', 'lion bear'],
@@ -1443,7 +1310,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 134,
 		head: 'What will be the output of the following code?',
 		body: '```js\na=5;\nb=4;\nalert(a++(+(+(+b))));\n```',
 		options: ['18', '10', '9', '20'],
@@ -1451,7 +1317,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 135,
 		head: 'Which snippet could you add to this code to print "{"type": "tiger"}" to the console?',
 		body: '```js\nlet cat = { type: "tiger", size: "large" };\n\nlet json = /* Snippet here */;\n\nconsole.log(json); // print {"type":"tiger"}\n```',
 		options: [
@@ -1464,7 +1329,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 136,
 		head: 'Which document method is not used to get a reference to a DOM node?',
 		body: null,
 		options: [
@@ -1477,7 +1341,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 137,
 		head: 'In JavaScript, all objects inherit a built-in property from a **\\*\\*\\*\\***\\_\\_\\_**\\*\\*\\*\\***.',
 		body: null,
 		options: ['node', 'instance variable', 'prototype', 'accessor'],
@@ -1485,7 +1348,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 138,
 		head: 'Which of the following are not server-side Javascript objects?',
 		body: null,
 		options: ['Date', 'FileUpload', 'Function', 'All of the above'],
@@ -1493,7 +1355,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 139,
 		head: 'What will be the output of the following code snippet?',
 		body: '```javascript\nconst obj1 = { first: 20, second: 30, first: 50 };\nconsole.log(obj1);\n```',
 		options: [
@@ -1506,7 +1367,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 140,
 		head: 'Which object in Javascript doesn’t have a prototype?',
 		body: null,
 		options: [
@@ -1519,7 +1379,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 141,
 		head: 'What does … operator do in JS?',
 		body: null,
 		options: [
@@ -1532,7 +1391,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 142,
 		head: 'How to stop an interval timer in Javascript?',
 		body: null,
 		options: [
@@ -1545,7 +1403,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 143,
 		head: 'What will be the output of the following code snippet?',
 		body: '```javascript\nprint(typeof NaN);\n```',
 		options: ['Object', 'Number', 'String', 'None of the above'],
@@ -1553,7 +1410,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 144,
 		head: 'What will be the output of the following code snippet?',
 		body: '```javascript\n<script type="text/javascript">a = 5 + "9"; document.write(a);</script>\n```',
 		options: ['Compilation Error', '14', 'Runtime Error', '59'],
@@ -1561,7 +1417,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 145,
 		head: 'Which of the following methods can be used to display data in some form using Javascript?',
 		body: null,
 		options: [
@@ -1574,7 +1429,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 146,
 		head: 'What value is assigned to total after this code executes?',
 		body: '```javascript\nfunction sum(num1, num2 = 2, num3 = 3) {\nreturn num1 + num2 + num3;\n}\nlet values = [1, 5];\nlet total = sum(4, ...values);\n```',
 		options: ['10', '6', '7', '8'],
@@ -1582,7 +1436,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 147,
 		head: 'Which statement is applicable to the defer attribute of the HTML <script> tag?',
 		body: null,
 		options: [
@@ -1596,7 +1449,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 148,
 		head: 'Which method of a class is called to initialize an object of that class?',
 		body: null,
 		options: ['init()', 'create()', 'new()', 'constructor()'],
@@ -1604,7 +1456,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 149,
 		head: 'Which expression evaluates to true?',
 		body: null,
 		options: ['Boolean(NaN)', 'Boolean(0)', 'Boolean("false")', 'Boolean("")'],
@@ -1612,7 +1463,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 150,
 		head: 'How would you check if the word "pot" is in the word "potato"?',
 		body: null,
 		options: [
@@ -1625,7 +1475,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 151,
 		head: 'Which collection object allows a unique value to be inserted only once?',
 		body: null,
 		options: ['Map', 'Array', 'Set', 'Object'],
@@ -1633,7 +1482,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 152,
 		head: 'How would you change the color of this header to pink?',
 		body: '```javascript\n<h2 id="cleverest">girls</h2>\n```',
 		options: [
@@ -1647,7 +1495,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 153,
 		head: 'Which line is missing from this code if you expect the code to evaluate to true?',
 		body: "```js\nvar compare = function (test1, test2) {\n// Missing line\n};\n\ncompare(1078, '1078'); // yields true\n```",
 		options: [
@@ -1660,7 +1507,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 154,
 		head: 'What is the output of this code?',
 		body: "```js\nif (true) {\nvar first = 'You';\n}\n\nfunction fScope() {\nvar second = 'got this!';\n}\nfScope();\nconsole.log(first);\nconsole.log(second);\n```\nundefined\nReferenceError\nundefined\ngot this!",
 		options: ['You', 'You', 'undefined', 'You'],
@@ -1668,7 +1514,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 155,
 		head: 'What is the output for the code given below?',
 		body: "```js\nconsole.log('hello' + 'world');\n```",
 		options: ['helloworld!', 'helloworld !', 'hello world!', 'hello world !'],
@@ -1676,7 +1521,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 156,
 		head: 'What is the output of this code?',
 		body: '```js\nconsole.log(10 + 10);\n```',
 		options: ['10', '20', '30', '40'],
@@ -1684,7 +1528,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 157,
 		head: 'Events related to the browser window can be handled by?',
 		body: null,
 		options: ['Onclicks', 'Window', 'querySelector', 'None of the above'],
@@ -1692,7 +1535,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 158,
 		head: 'How do you define a function in JavaScript?',
 		body: null,
 		options: [
@@ -1705,7 +1547,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 159,
 		head: "Your code is producing the error: TypeError: Cannot read property 'reduce' of undefined. What does that mean?",
 		body: null,
 		options: [
@@ -1719,7 +1560,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 160,
 		head: 'Which of the following methods can be used to display data in some form using Javascript?',
 		body: null,
 		options: [
@@ -1732,7 +1572,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 161,
 		head: 'Which document method is not used to get a reference to a DOM node?',
 		body: null,
 		options: [
@@ -1745,7 +1584,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 162,
 		head: 'Which of these is a valid variable name?',
 		body: null,
 		options: ['5thItem', 'firstName', 'grand total', 'function'],
@@ -1753,7 +1591,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 163,
 		head: 'What function is used in JavaScript to schedule a function to run after a specified number of milliseconds?',
 		body: null,
 		options: ['setTimeout()', 'setInterval()', 'delay()', 'wait()'],
@@ -1761,7 +1598,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 164,
 		head: 'Which of the following is a server-side Java Script object?',
 		body: null,
 		options: ['Function', 'File', 'FileUpload', 'Date'],
@@ -1769,7 +1605,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 165,
 		head: "Which statement best describes the var keyword's scope in JavaScript?",
 		body: null,
 		options: [
@@ -1782,7 +1617,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 166,
 		head: 'What will be logged to the console?',
 		body: "```js\nconst foo = () => console.log('First');\nconst bar = () => setTimeout(() => console.log('Second'), 0);\nfoo();\nbar();\nconsole.log('Third');\n```",
 		options: [
@@ -1795,7 +1629,6 @@ const questions = [
 	},
 	{
 		topic: 'JavaScript',
-		num: 167,
 		head: 'What will be the output of running this code?',
 		body: "```js\nfunction scream(words) {\nreturn words.toUpperCase() + '!!!';\n}\n\nscream('yay');\n```",
 		options: ['YAY!!!', 'ReferenceError', 'Undefined', 'TypeError'],
@@ -1803,7 +1636,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 1,
 		head: 'Among these selectors which selector has the highest specificity ranking for selecting the anchor link element?',
 		body: '```css\nul li a\na\n.example a\ndiv a\n```',
 		options: ['`.example a`', '`div a`', '`a`', '`ul li a`'],
@@ -1811,7 +1643,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 2,
 		head: 'Using an attribute selector, how would you select an `<a>` element with a "title" attribute?',
 		body: null,
 		options: [
@@ -1824,7 +1655,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 3,
 		head: 'What is the CSS selector for an `<a>` tag containing the title attribute?',
 		body: null,
 		options: ['`a[title]`', '`a > title`', '`a=title`', '`a.title`'],
@@ -1832,7 +1662,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 4,
 		head: 'CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or if you need to support an older browser version. What are two valid techniques used to clear floats?',
 		body: null,
 		options: [
@@ -1846,7 +1675,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 5,
 		head: 'What element(s) do the following selectors match?',
 		body: '```css\n1) .nav {\n...;\n}\n2) nav {\n...;\n}\n3) #nav {\n...;\n}\n```\n```\n1. An element with an ID of "nav"\n2. A nav element\n3. An element with a class of "nav"\n```\n```\n1. An element with a class of "nav"\n2. A nav element\n3. An element with an id of "nav"\n```\n```\n1. An element with a class of "nav"\n2. A nav element\n3. A div with an id of "nav"\n```',
 		options: ['A', 'B `They all target the same nav element.`', 'C', 'D'],
@@ -1854,7 +1682,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 6,
 		head: 'When adding transparency styles, what is the difference between using the opacity property versus the background property with a `rgba()` value?',
 		body: null,
 		options: [
@@ -1868,7 +1695,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 7,
 		head: 'What is true of block and inline elements? (_Alternative_: Which statement about block and inline elements is true?)',
 		body: null,
 		options: [
@@ -1882,7 +1708,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 8,
 		head: 'CSS grid introduced a new length unit, fr, to create flexible grid tracks. Referring to the code sample below, what will the widths of the three columns be?',
 		body: '```css\n.grid {\ndisplay: grid;\nwidth: 500px;\ngrid-template-columns: 50px 1fr 2fr;\n}\n```',
 		options: [
@@ -1896,7 +1721,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 9,
 		head: 'If the width of the container is 500 pixels, what would the width of the three columns be in this layout?',
 		body: '`.grid { display: grid; grid-template-columns: 50px 1fr 2fr; }`',
 		options: [
@@ -1909,7 +1733,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 10,
 		head: 'What is the use of line-height property?',
 		body: null,
 		options: [
@@ -1923,7 +1746,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 11,
 		head: 'Three of these choices are true about class selectors. Which is NOT true?',
 		body: null,
 		options: [
@@ -1937,7 +1759,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 12,
 		head: 'What is not true about class selectors?',
 		body: null,
 		options: [
@@ -1950,7 +1771,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 13,
 		head: 'There are many properties that can be used to align elements and create page layouts such as float, position, flexbox, and grid. Of these four properties, which one should be used to align a global navigation bar that stays fixed at the top of the page?',
 		body: null,
 		options: ['position', 'flexbox', 'grid', 'float'],
@@ -1958,7 +1778,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 14,
 		head: 'In the shorthand example below, which individual background properties are represented?',
 		body: '```css\nbackground: blue url(image.jpg) no-repeat scroll 0px 0px;\n```\n```css\nbackground-color: blue;\nbackground-image: url(image.jpg);\nbackground-repeat: no-repeat;\nbackground-attachment: scroll;\nbackground-position: 0px 0px;\n```\n```css\nbackground-color: blue;\nbackground-img: URL(image.jpg);\nbackground-position: no-repeat;\nbackground-scroll: scroll;\nbackground-size: 0px 0px;\n```\n```css\nbackground-color: blue;\nbackground-src: URL(image.jpg);\nbackground-repeat: no-repeat;\nbackground-wrap: scroll;\nbackground-position: 0px 0px;\n```\n```css\nbackground-color: blue;\nbackground-src: URL(image.jpg);\nbackground-repeat: no-repeat;\nbackground-scroll: scroll;\nbackground-position: 0px 0px;\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -1966,7 +1785,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 15,
 		head: 'In this example, according to cascading and specificity rules, what color will the link be?',
 		body: '```css\n.example {\ncolor: yellow;\n}\nul li a {\ncolor: blue;\n}\nul a {\ncolor: green;\n}\na {\ncolor: red;\n}\n```\n```HTML\n<ul>\n<li><a href="#" class="example">link</a></li>\n<li>list item</li>\n<li>list item</li>\n</ul>\n```',
 		options: ['green', 'yellow', 'blue', 'red'],
@@ -1974,7 +1792,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 16,
 		head: 'When elements overlap, they are ordered on the z-axis (i.e., which element covers another). The z-index property can be used to specify the z-order of overlapping elements. Which set of statements about the z-index property are true?',
 		body: null,
 		options: [
@@ -1988,7 +1805,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 17,
 		head: 'When elements within a container overlap, the z-index property can be used to indicate how those items are stacked on top of each other. Which set of statements is true?',
 		body: '```\n1. Larger z-index values appear on top elements with a lower z-index value.\n2. Negative and positive numbers can be used.\n3. The z-index can be used only on positioned elements.\n```\n```\n1. Smaller z-index values appear on top of elements with a larger z-index value.\n2. Negative and positive numbers can be used.\n3. The z-index can be used with or without positioned elements.\n```\n```\n1. Smaller z-index values appear on top of elements with a larger z-index value.\n2. Negative and positive numbers can be used.\n3. The z-index must also be used with positioned elements.\n```\n```\n1. Larger z-index values appear on top of elements with a lower z-index value.\n2. Only a positive number can be used.\n3. The z-index must also be used with positioned elements.\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -1996,7 +1812,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 18,
 		head: 'What is the difference between the following line-height settings?',
 		body: '```css\nline-height: 20px;\nline-height: 2;\n```',
 		options: [
@@ -2010,7 +1825,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 19,
 		head: 'In the following example, what color will paragraph one and paragraph two be? (_Alternative_: In this example, what color will paragraphs one and two be?)',
 		body: '```HTML\n<section>\n<p>paragraph one</p>\n</section>\n\n<p>paragraph two</p>\n```\n```css\nsection p {\ncolor: red;\n}\nsection + p {\ncolor: blue;\n}\n```',
 		options: [
@@ -2024,7 +1838,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 20,
 		head: 'What are three valid ways of adding CSS to an HTML page?',
 		body: '```\n1. External; CSS is written in a separate file.\n2. Inline; CSS is added to the <head> of the HTML page.\n3. Internal; CSS is included within the HTML tags.\n```\n```\n1. External; CSS is written in a separate file and is linked within the <header> element of the HTML file.\n2. Inline; CSS is added to the HTML tag.\n3. Internal; CSS is included within the <header> element of the HTML file.\n```\n```\n1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\n2. Internal; CSS is included within the <header> element of the HTML file.\n3. Inline; CSS is added to the HTML tag.\n```\n```\n1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\n2. Inline; CSS is added to the HTML tag.\n3. Internal; CSS is included within the <head> element of the HTML file.\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -2032,7 +1845,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 21,
 		head: 'Which statement is true for the SVG image format?',
 		body: null,
 		options: [
@@ -2046,7 +1858,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 22,
 		head: 'In the example below, when will the color pink be applied to the anchor element?',
 		body: '```css\na:active {\ncolor: pink;\n}\n```',
 		options: [
@@ -2060,7 +1871,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 23,
 		head: 'To change the color of an SVG using CSS, which property is used?',
 		body: null,
 		options: [
@@ -2074,7 +1884,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 24,
 		head: 'When using position: fixed, what will the element always be positioned relative to?',
 		body: null,
 		options: [
@@ -2087,7 +1896,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 25,
 		head: 'By default, a background image will repeat \\_',
 		body: null,
 		options: [
@@ -2100,7 +1908,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 26,
 		head: 'When using media queries, media types are used to target a device category. Which choice lists current valid media types?',
 		body: null,
 		options: [
@@ -2113,7 +1920,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 27,
 		head: 'How would you make the first letter of every paragraph on the page red?',
 		body: null,
 		options: [
@@ -2126,7 +1932,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 28,
 		head: 'In this example, what is the selector, property, and value?',
 		body: '```css\np {\ncolor: #000000;\n}\n```\n```\n"p" is the selector\n"#000000" is the property\n"color" is the value\n```\n```\n"p" is the selector\n"color" is the property\n"#000000" is the value\n```\n```\n"color" is the selector\n"#000000" is the property\n"#p" is the value\n```\n```\n"color" is the selector\n"p" is the property\n"#000000" is the value\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -2134,7 +1939,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 29,
 		head: 'What is the rem unit based on?',
 		body: null,
 		options: [
@@ -2148,7 +1952,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 30,
 		head: 'Which choice would give a block element rounded corners?',
 		body: null,
 		options: [
@@ -2161,7 +1964,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 31,
 		head: 'In the following media query example, what conditions are being targeted?',
 		body: '```css\n@media (min-width: 1024px), screen and (orientation: landscape) { … }\n```',
 		options: [
@@ -2175,7 +1977,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 32,
 		head: "CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element's transformation origin. By default, what is the location of the origin?",
 		body: null,
 		options: [
@@ -2188,7 +1989,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 33,
 		head: 'Which of the following is not a valid color value? (_Alternative:_ Which choice is not a valid color value?)',
 		body: null,
 		options: [
@@ -2201,7 +2001,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 34,
 		head: 'What is the vertical gap between the two elements below?',
 		body: '```HTML\n<div style="margin-bottom: 2rem;">Div 1</div>\n<div style="margin-top: 2rem;">Div 2</div>\n```',
 		options: ['2rem', '32px', '64px', '4rem'],
@@ -2209,7 +2008,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 35,
 		head: 'When using the Flexbox method, what property and value is used to display flex items in a column?',
 		body: null,
 		options: [
@@ -2222,7 +2020,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 36,
 		head: 'Which type of declaration will take precedence?',
 		body: null,
 		options: [
@@ -2235,7 +2032,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 38,
 		head: 'There are two sibling combinators that can be used to select elements contained within the same parent element; the general sibling combinator (~) and the adjacent sibling combinator (+). Referring to the example below, which elements will the styles be applied to?',
 		body: '```css\nh2 ~ p {\ncolor: blue;\n}\nh2 + p {\nbackground: beige;\n}\n```\n```HTML\n<section>\n<p>paragraph 1</p>\n<h2>Heading</h2>\n<p>paragraph 2</p>\n<p>paragraph 3</p>\n</section>\n```\nNote: a variant of the question below.',
 		options: [
@@ -2248,7 +2044,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 39,
 		head: 'Which element(s) will be blue?',
 		body: '```css\nh2 ~ p {\ncolor: blue;\n}\n```\n```HTML\n<section>\n<p>P1</p>\n<h2>H2</h2>\n<p>P3</p>\n<p>P4</p>\n</section>\n```',
 		options: ['P3', 'P1, P3 and P4', 'P3 and P4', 'P1'],
@@ -2256,7 +2051,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 41,
 		head: 'There are many advantages to using icon fonts. What is one of those advantages?',
 		body: null,
 		options: [
@@ -2270,7 +2064,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 42,
 		head: 'What is the difference between `display:none` and `visibility:hidden`?',
 		body: null,
 		options: [
@@ -2284,7 +2077,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 43,
 		head: 'What selector and property would you use to scale an element to be 50% smaller on hover?',
 		body: null,
 		options: [
@@ -2297,7 +2089,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 44,
 		head: 'Which statement regarding icon fonts is true?',
 		body: null,
 		options: [
@@ -2311,7 +2102,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 45,
 		head: 'The values for the font-weight property can be keywords or numbers. For each numbered value below, what is the associated keyword?',
 		body: '```css\nfont-weight: 400;\nfont-weight: 700;\n```',
 		options: [
@@ -2324,7 +2114,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 46,
 		head: 'Using the:nth-child pseudo class, what would be the most efficient way to style every third item in a list, no matter how many items are present, starting with item 2?',
 		body: '```css\nli:nth-child(3 + 2n) {\nmargin: 0 5 px;\n}\n```\n```css\nli:nth-child(3n + 2) {\nmargin: 0 5 px;\n}\n```\n```css\nli:nth-child(2),\nli:nth-child(5),\nli:nth-child(8) {\nmargin: 0 5 px;\n}\n```\n```css\nli:nth-child(2n + 3) {\nmargin: 0 5 px;\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -2332,7 +2121,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 47,
 		head: 'Which selector would select only internal links within the current page?',
 		body: null,
 		options: [
@@ -2345,7 +2133,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 48,
 		head: 'What is the difference between the margin and padding properties?',
 		body: null,
 		options: [
@@ -2359,7 +2146,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 49,
 		head: 'What is not a valid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?',
 		body: null,
 		options: [
@@ -2372,7 +2158,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 50,
 		head: 'Is there an error in this code? If so, find the best description of the problem',
 		body: "```css\n@font-face {\nfont-family: 'Avenir', sans-serif;\nsrc:\nurl('avenir.woff2') format('woff2'),\nurl('avenir.woff') format('woff');\n}\n```",
 		options: [
@@ -2385,7 +2170,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 51,
 		head: 'Which style places an element at a fixed location within its container?',
 		body: null,
 		options: [
@@ -2398,7 +2182,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 52,
 		head: 'The calc() CSS function is often used for calculating relative values. In the example below, what is the specified margin-left value?',
 		body: '```css\n.example {\nmargin-left: calc(5% + 5px);\n}\n```',
 		options: [
@@ -2412,7 +2195,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 53,
 		head: 'Which code would you use to absolutely position an element of the logo class?',
 		body: null,
 		options: [
@@ -2425,7 +2207,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 54,
 		head: 'In this example, what color will Paragraph 1 be?',
 		body: '```css\np:first-of-type {\ncolor: red;\n}\np {\ncolor: blue;\n}\n.container {\ncolor: yellow;\n}\np:first-child {\ncolor: green;\n}\n```\n```HTML\n<div class="container">\n<h1>Heading</h1>\n<p>Paragraph1</p>\n<p>Paragraph2</p>\n</div>\n```',
 		options: ['blue', 'green', 'red', 'yellow'],
@@ -2433,7 +2214,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 55,
 		head: 'What is the `::placeholder pseudo-element` used for?',
 		body: null,
 		options: [
@@ -2447,7 +2227,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 56,
 		head: 'Which statement is true of the single colon (`:`) or double colon (`::`) notations for pseudo-elements-for example, `::before` and `:before`?',
 		body: null,
 		options: [
@@ -2461,7 +2240,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 57,
 		head: 'Which choice is not a valid value for the font-style property?',
 		body: null,
 		options: ['normal', 'italic', 'none', 'oblique'],
@@ -2469,7 +2247,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 58,
 		head: 'When would you use the @font-face method?',
 		body: null,
 		options: [
@@ -2482,7 +2259,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 59,
 		head: 'You have a large image that needs to fit into a 400 x 200 pixel area. What should you resize the image to if your users are using Retina displays?',
 		body: null,
 		options: [
@@ -2495,7 +2271,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 60,
 		head: "In Chrome's Developer Tools view, where are the default styles listed?",
 		body: null,
 		options: [
@@ -2508,7 +2283,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 61,
 		head: 'While HTML controls document structure, CSS controls `___`.',
 		body: null,
 		options: [
@@ -2521,7 +2295,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 62,
 		head: "What is the recommended name you should give the folder that holds your project's images?",
 		body: null,
 		options: ['images', '#images', 'Images', 'my images'],
@@ -2529,7 +2302,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 63,
 		head: 'What is the advantage of using inline CSS?',
 		body: null,
 		options: [
@@ -2542,7 +2314,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 64,
 		head: 'Which W3C status code represents a CSS specification that is fully implemented by modern browsers?',
 		body: null,
 		options: [
@@ -2555,7 +2326,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 65,
 		head: 'Are any of the following declarations invalid?',
 		body: '```css\ncolor: red; /* declaration A */\nfont-size: 1em; /* declaration B */\npadding: 10px 0; /* declaration C */\n```',
 		options: [
@@ -2568,7 +2338,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 66,
 		head: 'Which CSS will cause your links to have a solid blue background that changes to semitransparent on hover?',
 		body: '```css\na:link {\nbackground: #0000ff;\n}\na:hover {\nbackground: rgba(0, 0, 255, 0.5);\n}\n```\n```css\na {\ncolor: blue;\n}\na:hover {\nbackground: white;\n}\n```\n```css\na:link {\nbackground: blue;\n}\na:hover {\ncolor: rgba(0, 0, 255, 0.5);\n}\n```\n```css\na:hover {\nbackground: rgba(blue, 50%);\n}\na:link {\nbackground: rgba(blue);\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -2576,7 +2345,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 67,
 		head: 'Which CSS rule takes precedence over the others listed?',
 		body: null,
 		options: [
@@ -2589,7 +2357,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 68,
 		head: 'The body of your page includes some HTML sections. How will it look with the following CSS applied?',
 		body: '```css\nbody {\nbackground: #ffffff; /* white */\n}\nsection {\nbackground: #0000ff; /* blue */\nheight: 200px;\n}\n```',
 		options: [
@@ -2602,7 +2369,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 69,
 		head: 'Which CSS keyword can you use to override standard source order and specificity rules?',
 		body: null,
 		options: ['`!elevate!`', '`*prime`', '`override`', '`!important`'],
@@ -2610,7 +2376,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 70,
 		head: 'You can use the `___` pseudo-class to set a different color on a link if it was clicked on.',
 		body: null,
 		options: ['`a:visited`', '`a:hover`', '`a:link`', '`a:focus`'],
@@ -2618,7 +2383,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 71,
 		head: 'Which color will look the brightest on your screen, assuming the background is white?',
 		body: null,
 		options: [
@@ -2631,7 +2395,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 72,
 		head: 'Which CSS selector can you use to select all elements on your page associated with the two classes header and clear?',
 		body: null,
 		options: [
@@ -2644,7 +2407,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 73,
 		head: 'A universal selector is specified using a(n) `___`.',
 		body: null,
 		options: [
@@ -2657,7 +2419,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 74,
 		head: "In the following CSS code, `'h1'` is the `___`, while `'color'` is the `___`.",
 		body: '```css\nh1 {\ncolor: red;\n}\n```',
 		options: [
@@ -2670,7 +2431,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 75,
 		head: 'What is an alternate way to define the following CSS rule?',
 		body: '```css\nfont-weight: bold;\n```',
 		options: [
@@ -2683,7 +2443,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 76,
 		head: 'You want your styling to be based on a font stack consisting of three fonts. Where should the generic font for your font family be specified?',
 		body: null,
 		options: [
@@ -2696,7 +2455,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 77,
 		head: 'When using a font stack to declare the font family, in what order should the values appear?',
 		body: null,
 		options: [
@@ -2710,7 +2468,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 78,
 		head: 'What is one disadvantage of using a web font service?',
 		body: null,
 		options: [
@@ -2723,7 +2480,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 79,
 		head: 'How do you add Google fonts to your project?',
 		body: null,
 		options: [
@@ -2737,7 +2493,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 80,
 		head: 'Using the following HTML and CSS example, what will the equivalent pixel value be for .em and .rem elements?',
 		body: '```css\nHTML {\nfont-size: 10px;\n}\nbody {\nfont-size: 2rem;\n}\n.rem {\nfont-size: 1.5rem;\n}\n.em {\nfont-size: 2em;\n}\n```\n```HTML\n<body>\n<p class="rem"></p>\n<p class="em"></p>\n</body>\n```',
 		options: [
@@ -2751,7 +2506,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 81,
 		head: 'What property is used to adjust the space between text characters?',
 		body: null,
 		options: [
@@ -2764,7 +2518,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 82,
 		head: 'What is the correct syntax for changing the cursor from an arrow to a pointing hand when it interacts with a named element?',
 		body: null,
 		options: [
@@ -2777,7 +2530,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 83,
 		head: 'What is the effect of this style?',
 		body: '```css\nbackground-position: 10% 50%;\n```',
 		options: [
@@ -2791,7 +2543,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 84,
 		head: 'How will the grid items display?',
 		body: '```css\ngrid-template-columns: 2fr 1fr;\n```',
 		options: [
@@ -2805,7 +2556,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 85,
 		head: 'Which style rule would make the image 50% smaller during a hover?',
 		body: '```HTML\n<img id="photo" alt="" src="..." />\n```',
 		options: [
@@ -2818,7 +2568,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 86,
 		head: 'Which CSS properties can you use to create a rounded corner on just the top-left and top-right corners of an element?',
 		body: '```css\nA. border-radius: 10px 10px 0 0;\nB. border-top-left-radius: 10px; and border-top-right-radius: 10px;\nC. border-radius: 10px 0;\nD. border-top-radius: 10px;\n```',
 		options: ['A and C', 'C and D', 'B and C', 'A and B'],
@@ -2826,7 +2575,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 87,
 		head: 'Review the HTML example below. Then choose the list of selectors that select the \\<p>, from lowest to highest specificity.',
 		body: "```HTML\n<section>\n<p class=\"example\">...</p>\n</section>\n```\n```css\n1. section \\* {\n...;\n}\n2. [class*='example'] {\n...;\n}\n3. p.example {\n...;\n}\n4. section p {\n...;\n}\n```\n```css\n1. p {\n...;\n}\n2. p.example {\n...;\n}\n3. section p {\n...;\n}\n4. [class*='example'] {\n...;\n}\n```\n```css\n1. p.example {\n...;\n}\n2. section p {\n...;\n}\n3. [class*='example'] {\n...;\n}\n4. section \\* {\n...;\n}\n```\n```css\n1. p {\n...;\n}\n2. section p {\n...;\n}\n3. [class*='example'] {\n...;\n}\n4. p.example {\n...;\n}\n```",
 		options: ['A', 'B', 'C', 'D'],
@@ -2834,7 +2582,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 88,
 		head: 'Which property is used to create a drop shadow effect on an HTML element?',
 		body: null,
 		options: ['element-shadow', 'outer-shadow', 'dropbox-shadow', 'box-shadow'],
@@ -2842,7 +2589,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 89,
 		head: 'What is the correct selector for targeting all text inputs that are not disabled?',
 		body: '`input[type="text"]` selects all the input with type text, and `:not([disabled])` select all the elements not having the attribute "disabled". Combining both only selects all the input elements with type attribute as "text" and not having "disabled" attribute.`\n1. [Reference link attribute-selector](https://www.w3schools.com/css/css_attribute_selectors.asp)\n2. [Reference link-:not()](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)',
 		options: [
@@ -2855,7 +2601,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 90,
 		head: 'How can you create a semi-transparent background color?',
 		body: '`rgba` is a funtion in css. rgba stands for red, green, blue, and alpha. The value of alpha can be between 0 and 1 both inclusive with 0 being fully transparent and 1 being fully opaque.',
 		options: [
@@ -2868,7 +2613,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 91,
 		head: 'Using this HTML markup, how would you select only the headings contained within the `<header>` element?',
 		body: '```HTML\n<header>\n<h1>Heading 1</h1>\n<h2>Heading 2</h2>\n</header>\n<h2>Heading 2</h2>\n```',
 		options: [
@@ -2881,7 +2625,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 92,
 		head: 'Suppose you want to have a list of items (.item) displayed in a row and in reverse order using flexbox. What is the error in the CSS below?',
 		body: '```css\n.container {\ndisplay: flex;\n}\n.item {\nborder: 1px solid red;\nflex-direction: row-reverse;\n}\n```',
 		options: [
@@ -2895,7 +2638,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 93,
 		head: 'Which choice is not a valid transition?',
 		body: '1. [MDN:](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)\n2. [MDM:](https://developer.mozilla.org/en-US/docs/Web/CSS/position#formal_definition)\n3. [W3s](https://www.w3schools.com/cssref/pr_class_position.asp)\n4. [W3s](https://www.w3schools.com/cssref/css_animatable.asp)',
 		options: [
@@ -2908,7 +2650,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 94,
 		head: 'In this example, what color will the paragraphs be and why?',
 		body: '```css\narticle p {\ncolor: blue;\n}\narticle > p {\ncolor: green;\n}\n```\n```HTML\n<article>\n<p>Paragraph 1</p>\n\n<aside>\n<p>Paragraph 2</p>\n</aside>\n</article>\n```',
 		options: [
@@ -2921,7 +2662,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 95,
 		head: 'Review the declaration of border style shown below. What is the corresponding longhand syntax?',
 		body: '```css\nborder: 1px solid red;\n```\n```css\nborder-size: 1px;\nborder-style: solid;\nborder-color: red;\n```\n```css\nborder-size: 1px;\nborder-type: solid;\nborder-color: red;\n```\n```css\nborder-width: 1px;\nborder-style: solid;\nborder-color: red;\n```\n```css\nborder-width: 1px;\nborder-line: solid;\nborder-color: red;\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -2929,7 +2669,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 96,
 		head: 'Pseudo-classes are used to `_`.',
 		body: null,
 		options: [
@@ -2942,7 +2681,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 97,
 		head: 'In this example, what styles will be applied to which elements?',
 		body: '```css\nsection {\ncolor: gray;\n}\n```\n```HTML\n<section>\n<p>paragraph</p>\n<a href="#">link</a>\n</section>\n```',
 		options: [
@@ -2955,7 +2693,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 98,
 		head: 'Which answer is an example of a type selector (also sometimes referred to as an element selector)?',
 		body: null,
 		options: [
@@ -2968,7 +2705,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 99,
 		head: 'What is the correct order for listing different link states on a website so those states display correctly on the page?',
 		body: '```css\na\na:hover\n```\n```css\n:link\n:visited\n:hover\n:active\n:focus\n```\n```css\n:active\n:focus\n:hover\n:link\n:visited\n```\n```css\n:link\n:visited\n:focus\n:hover\n:active\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -2976,7 +2712,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 100,
 		head: 'Which selector is used to select the paragraph element that is a direct descendent of the section?',
 		body: null,
 		options: [
@@ -2989,7 +2724,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 101,
 		head: 'For this code, what is the font color of the hypertext link?',
 		body: '```css\nul {\n--color: red;\n}\np {\ncolor: var(--color);\n}\na {\ncolor: var(--color, orange);\n}\n```\n```HTML\n<p>Paragraph</p>\n<ul>\n<li>\n<a href="#">list item a link </a>\n</li>\n<li>list item</li>\n</ul>\n```',
 		options: ['red', 'orange', 'blue', 'black'],
@@ -2997,7 +2731,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 102,
 		head: 'Which statement is not true?',
 		body: null,
 		options: [
@@ -3011,7 +2744,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 103,
 		head: 'What is the output of the margin value when used within this context, assuming that its containing element is larger than 800px?',
 		body: '```css\n.example {\nwidth: 800px;\nmargin: 0 auto;\n}\n```',
 		options: [
@@ -3025,7 +2757,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 104,
 		head: 'There are currently four viewport-percentage lengths that can be used to define the value relative to the viewport size: vw, vh, vmin, and vmax. If the current viewport size has a width of 800px and a height of 600px, what will these values be equivalent to in pixels?',
 		body: '```css\n10vw = ?px\n10vh = ?px\n10vmin = ?px\n10vmax = ?px\n```\n10vh = 60px\n10vmin = 60px\n10vmax = 80px\n10vh = 80px\n10vmin = 80px\n10vmax = 60px\n10vh = 6px\n10vmin = 6px\n10vmax = 8px\n10vh = 8px\n10vmin = 8px\n10vmax = 6px',
 		options: ['10vw = 80px', '10vw = 60px', '10vw = 8px', '10vw = 6px'],
@@ -3033,7 +2764,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 105,
 		head: 'Referring to the HTML markup and CSS example below, which element(s) will be targeted?',
 		body: '```css\np:first-of-type:first-letter {\ncolor: red;\n}\n```\n```HTML\n<body>\n<p>Paragraph 1.</p>\n<p>Paragraph 2.</p>\n\n<article>\n<h1>Heading</h1>\n<p>Paragraph 3.</p>\n<p>paragraph 4.</p>\n</article>\n\n<section>\n<p>Paragraph 5.</p>\n<p>Paragraph 6.</p>\n</section>\n</body>\n```',
 		options: [
@@ -3046,7 +2776,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 106,
 		head: 'Which five style features are associated with the box model?',
 		body: null,
 		options: [
@@ -3059,7 +2788,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 107,
 		head: 'Which choice will not set all links that include domain.com to pink?',
 		body: "```css\na[href$='domain.com'] {\ncolor: pink;\n}\n```\n```css\na[href='*domain.com'] {\ncolor: pink;\n}\n```\n```css\na[href*='domain.com'] {\ncolor: rgba(255, 155, 155);\n}\n```\n```css\na[href*='domain.com'] {\ncolor: pink;\n}\n```",
 		options: ['A', 'B', 'C', 'D'],
@@ -3067,7 +2795,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 108,
 		head: 'Which property and value pair could be used to apply a linear gradient effect?',
 		body: null,
 		options: [
@@ -3080,7 +2807,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 109,
 		head: 'You want to add a background circle behind an icon. Which style declaration is correct?',
 		body: '```css\n.glyphicon-bgcircle {\ncircle-radius: 50%;\nmargins: 50px;\nbackground-color: #fdadc6;\ncolor: rgba(255, 255, 255, 1);\nfont-size: 24px;\n}\n```\n```css\nglyphicon-bgcircle {\nborder-circle: 50%;\npadding: 50px;\nbackground-color: #fdadc6;\ncolor: rgba(255, 255, 255, 1);\nfont-size: 24px;\n}\n```\n```css\n.glyphicon-bgcircle {\nborder-radius: 50%;\npadding: 50px;\nbackground-color: #fdadc6;\ncolor: rgba(255, 255, 255, 1);\nfont-size: 24px;\n}\n```\n```css\n.glyphicon-bgcircle {\nradius-rounded: 50%;\nmargins: auto;\nbackground-color: #fdadc6;\ncolor: rgba(255, 255, 255, 1);\nfont-size: 24px;\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3088,7 +2814,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 110,
 		head: 'Which items are valid values for the font-size property?',
 		body: '```css\nA. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n```',
 		options: ['C, D', 'B, C, D', 'A, C', 'A, B, C, D'],
@@ -3096,7 +2821,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 112,
 		head: 'Given this code, which CSS declaration of .overlay will span the entire width and height of its container?',
 		body: '```css\n<style>\n.container {\nposition: relative;\nheight: 200px;\nwidth: 200px;\nborder: 1px solid black;\n}\n</style>\n<div class="container"><div class="overlay"></div></div>\n```\n```css\n.overlay {\nposition: static;\ntop: 200px;\nbottom: 200px;\nright: 200px;\nleft: 200px;\nbackground-color: rgba(0, 0, 0, 0.5);\n}\n```\n```css\n.overlay {\nposition: absolute;\ntop: 200px;\nbottom: 200px;\nright: 200px;\nleft: 200px;\nbackground-color: rgba(0, 0, 0, 0.5);\n}\n```\n```css\n.overlay {\nposition: static;\ntop: 0;\nbottom: 0;\nright: 0;\nleft: 0;\nbackground-color: rgba(0, 0, 0, 0.5);\n}\n```\n```css\n.overlay {\nposition: absolute;\ntop: 0;\nbottom: 0;\nright: 0;\nleft: 0;\nbackground-color: rgba(0, 0, 0, 0.5);\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3104,7 +2828,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 113,
 		head: 'Which missing line of code would place the text on top of the image?',
 		body: '```js\n<div class="container">\n<img src="grumpy-cat.gif" />\n<p>The z-index property is cool!</p>\n</div>\n```\n```css\nimg {\nposition: absolute;\nleft: 0px;\ntop: 0px;\n// Missing line\n}\n```',
 		options: [
@@ -3117,7 +2840,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 114,
 		head: "To make the font size of an element one size smaller than the font size of the element's container, which style property would you apply?",
 		body: null,
 		options: [
@@ -3130,7 +2852,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 115,
 		head: 'Given this markup, which selector would result in the text being highlighted in yellow?',
 		body: '```js\n<span class="highlight">#BLM</span>\n```\n```css\n.highlight {\nbackground-color: yellow;\n}\n```\n```css\n#highlight {\nbackground-color: yellow;\n}\n```\n```css\n.highlight {\ncolor: yellow;\n}\n```\n```css\n#highlight {\ncolor: yellow;\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3138,7 +2859,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 116,
 		head: 'To prevent a background image from tiling in any direction, which style property would you apply?',
 		body: '```css\nbackground-repeat: no-repeat;\n```\n```css\nbackground-repeat: fixed;\n```\n```css\nbackground-repeat: none;\n```\n```css\nbackground-tile: none;\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3146,7 +2866,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 117,
 		head: 'To rotate an object 30 degrees counterclockwise, which style property would you apply?',
 		body: null,
 		options: [
@@ -3159,7 +2878,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 118,
 		head: 'Which style rule would you apply to set the background image to display the contents of the wood.png file?',
 		body: null,
 		options: [
@@ -3172,7 +2890,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 119,
 		head: 'What style rule would set the font color of only paragraph two to blue?',
 		body: '```js\n<section><p>paragraph one</p></section><p>paragraph two</p>\n```\n```css\nsection > p {\ncolor: blue;\n}\n```\n```css\np {\ncolor: blue;\n}\n```\n```css\nsection + p {\ncolor: blue;\n}\n```\n```css\np + section {\ncolor: blue;\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3180,7 +2897,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 120,
 		head: 'You want to move an element up 100px. Which CSS property would you use?',
 		body: null,
 		options: [
@@ -3193,7 +2909,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 121,
 		head: 'Which style will horizontally center the inner &lt;div&gt; within the outer &lt;div&gt;?',
 		body: '```js\n<div id="outer">\n<div id="inner">Center Me!</div>\n</div>\n```\n```css\n#inner {\nwidth: 50%;\n}\n\n#outer {\nwidth: 100%;\n}\n```\n```css\n#inner {\nleft: 0;\nright: 0;\nposition: center;\n}\n```\n```css\n#inner {\ntext-align: center;\n}\n```\n```css\n#inner {\nwidth: 50%;\nmargin: 0 auto;\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3201,7 +2916,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 122,
 		head: 'Which corner will the puppy be in when these CSS rules are applied?',
 		body: '```css\n.pen {\nheight: 100px;\nwidth: 100px;\nborder: 2px dashed brown;\nposition: relative;\n}\n\n#puppy {\nposition: absolute;\nright: 80px;\nbottom: 0px;\n}\n```\n```HTML\n<div class="pen">\n<span id="puppy">:dog:</span>\n</div>\n```',
 		options: [
@@ -3214,7 +2928,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 123,
 		head: 'Which choice uses the correct syntax for adding a hover pseudo-class to \\<a> element?',
 		body: null,
 		options: [
@@ -3227,7 +2940,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 124,
 		head: 'Which missing code will give "Cellar Door" a shadow?',
 		body: '```css\n<style>\n#cellar-door {\nbox-shadow: 3px 5px 10px #000;\n}\n.text-shadow {\ntext-shadow: 3px 5px 10px #000;\n}\n</style>\n\n<h1 _____> Cellar Door</h1>\n```',
 		options: [
@@ -3240,7 +2952,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 125,
 		head: 'Which choice is a valid example of a comment in CSS?',
 		body: null,
 		options: [
@@ -3253,7 +2964,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 126,
 		head: 'Which element(s) will be displayed in blue text?',
 		body: '```css\nh2 ~ p {\ncolor: blue;\n}\n<section>\n<p>P1</p>\n<h2>H2</h2>\n<p>P3</p>\n<p>P4</p>\n</section>\n```',
 		options: ['P3', 'P1, P3 and P4', 'P3 and P4', 'P1'],
@@ -3261,7 +2971,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 127,
 		head: 'When these pseudo-class selectors are applied to a link, what states will the styles be applied to?',
 		body: '```css\na:visited {\n...;\n}\na:active {\n...;\n}\na:hover {\n...;\n}\na:focus {\n...;\n}\n```\n`:active` styles are applied on mouse click and hold.\n`:hover` styles are applied on mouse over or mouse click and hold.\n`:focus` styles are applied when a Tab key on a keyboard is used to navigate through links.\n`:active` styles are applied on mouse click.\n`:hover` styles are applied on mouseover.\n`:focus` styles are applied on mouse click and hold, or when a Tab key on a keyboard is used to navigate through links.\n`:active` styles are applied on mouse click only and before mouse release.\n`:hover` styles are applied on mouseover.\n`:focus` styles are applied when a Tab key on a keyboard is used to navigate through links.\n`:active` styles are applied when the link has been opened.\n`:hover` styles are applied on mouseover.\n`:focus` styles are applied when a Tab key on a keyboard is used to navigate through links.',
 		options: [
@@ -3275,7 +2984,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 128,
 		head: 'What style rule should you use to display all input elements that have failed the validation test with a red font?',
 		body: '```css\ninput.valid[false] {\ncolor: red;\n}\n```\n```css\ninput:invalid {\ncolor: red;\n}\n```\n```css\ninput.not(valid) {\ncolor: red;\n}\n```\n```css\ninput.invalid {\ncolor: red;\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3283,7 +2991,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 129,
 		head: 'What style rule should you apply to the img element to display the element in grayscale with no color?',
 		body: '```css\nimg {\ntransform: grayscale(1);\n}\n```\n```css\nimg {\nfilter: grayscale(0);\n}\n```\n```css\nimg {\ntransform: grayscale(0);\n}\n```\n```css\nimg {\nfilter: grayscale(1);\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3291,7 +2998,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 130,
 		head: 'Why might you create a reset style sheet?',
 		body: null,
 		options: [
@@ -3305,7 +3011,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 131,
 		head: 'Which option is an invalid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?',
 		body: null,
 		options: [
@@ -3318,7 +3023,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 132,
 		head: 'How would you absolutely position an element of the logo class inside of a relatively positioned container?',
 		body: '```css\n.logo {\nposition: absolute;\npadding-left: 100px;\npadding-top: 150px;\n}\n```\n```css\n.logo {\nposition: absolute;\nleft: 100px;\ntop: 150px;\n}\n```\n```css\n.logo {\nposition: absolute;\nleft-padding: 100px;\ntop-padding: 150px;\n}\n```\n```css\n.logo {\nposition: absolute;\nmargin-left: 100px;\nmargin-top: 150px;\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3326,7 +3030,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 133,
 		head: 'How would the `<div>` with the class .child be positioned within its container?',
 		body: '```HTML\n<style>\n.container {\nheight: 200px;\nwidth: 200px;\n}\n.child {\nmargin: auto 0;\nheight: 100px;\n}\n</style>\n<div class="container">\n<div class="child">...</div>\n</div>\n```',
 		options: [
@@ -3340,7 +3043,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 134,
 		head: 'By default, a CSS transition is \\_\\_',
 		body: null,
 		options: [
@@ -3354,7 +3056,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 135,
 		head: 'Which style rule will extend the header element across an entire grid row from the first column through the last column?',
 		body: '```css\nheader {\ngrid-column: 1 / auto;\n}\n```\n```css\nheader {\ngrid-column: 1/-1;\n}\n```\n```css\nheader {\ngrid-column: -1/1;\n}\n```\n```css\nheader {\ngrid-column: 1/100%;\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3362,7 +3063,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 136,
 		head: 'To center the content of a grid cell horizontally and vertically within the cell, which style rule should you apply?',
 		body: '```css\nalign-items: start;\njustify-items: end;\n```\n```css\nalign--items: center;\njustify-items: center;\n```\n```css\nalign-items: middle;\njustify-items: middle;\n```\n```css\nalign-items: stretch;\njustify-items: stretch;\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3370,7 +3070,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 137,
 		head: 'What style rule should you use to display all input elements that have failed the validation test with a red font?',
 		body: '```css\ninput.valid[false] {\ncolor: red;\n}\n```\n```css\ninput:invalid {\ncolor: red;\n}\n```\n```css\ninput.not(valid) {\ncolor: red;\n}\n```\n```css\ninput.invalid {\ncolor: red;\n}\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3378,7 +3077,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 138,
 		head: 'To insert an external style sheet file into another style sheet file, which rule should you use?',
 		body: null,
 		options: ['`@import`', '`@link`', '`@insert`', '`@style`'],
@@ -3386,7 +3084,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 139,
 		head: 'Given this code, how tall will the following element be in pixels?',
 		body: '```HTML\n<style>\n#tall-text {\ndisplay: inline;\nfont-size: 20px;\nheight: 200px;\n}\n</style>\n\n<p id="tall-text">Did I grow?</p>\n```',
 		options: ['200px', '20px', '180px', '220px'],
@@ -3394,7 +3091,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 141,
 		head: 'Which CSS property is used to create an image reflection?',
 		body: null,
 		options: ['box-reflect', 'img-reflect', 'None of the above', 'reflect-img'],
@@ -3402,7 +3098,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 142,
 		head: 'What is the general syntax of writing the var() function?',
 		body: null,
 		options: [
@@ -3415,7 +3110,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 143,
 		head: 'How many layout modes were there before the Flexbox Layout Module was introduced in CSS?',
 		body: null,
 		options: ['2', '1', '4', '3'],
@@ -3423,7 +3117,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 144,
 		head: 'Which of the following components of the CSS box model are transparent?',
 		body: null,
 		options: ['Padding', 'Margin', 'Both A and B', 'None'],
@@ -3431,7 +3124,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 145,
 		head: 'How are custom fonts defined using CSS?',
 		body: null,
 		options: [
@@ -3444,7 +3136,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 146,
 		head: 'Which of the following CSS properties sets what kind of line decorations are added to an element, such as underlines, overlines, etc?',
 		body: null,
 		options: [
@@ -3457,7 +3148,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 147,
 		head: 'Which of the following CSS Properties sets the stacking order of positioned elements?',
 		body: null,
 		options: ['y-index', 'z-index', 'x-index', 'all of the mentioned'],
@@ -3465,7 +3155,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 148,
 		head: 'Which of the following properties allows a marquee to be used in the case of a text overflow?',
 		body: null,
 		options: [
@@ -3478,7 +3167,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 149,
 		head: 'Which of the following Cascading order has the highest precedence?',
 		body: null,
 		options: [
@@ -3491,7 +3179,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 150,
 		head: 'The CSS cascade assigns a weight to each style rule.',
 		body: null,
 		options: ['True', 'False'],
@@ -3499,7 +3186,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 151,
 		head: 'The \\***\\*\\_\\_\\_\\_\\*\\*** represents the result of the cascade: it is the declared value that wins the cascade.',
 		body: null,
 		options: [
@@ -3512,7 +3198,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 152,
 		head: 'Using negative text-indent is also known as **\\_**?',
 		body: null,
 		options: [
@@ -3525,7 +3210,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 153,
 		head: 'Using margin is also known as **\\_**?',
 		body: null,
 		options: [
@@ -3538,7 +3222,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 154,
 		head: 'If a particular rule should never be overridden by another rule, the \\***\\*\\_\\_\\_\\_\\*\\*** indication should be used.',
 		body: null,
 		options: ['@important', '!important!', '!important', 'important!'],
@@ -3546,7 +3229,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 155,
 		head: 'What does CSS stand for?',
 		body: null,
 		options: [
@@ -3559,7 +3241,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 156,
 		head: 'What color would rgb(255,0,0) give?',
 		body: null,
 		options: ['Blue', 'Green', 'Red', 'Yellow'],
@@ -3567,7 +3248,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 157,
 		head: 'What is the correct HTML for referring to an external style sheet?',
 		body: null,
 		options: [
@@ -3581,7 +3261,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 158,
 		head: 'The \\<link> tag goes inside:',
 		body: null,
 		options: [
@@ -3594,7 +3273,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 159,
 		head: 'What is CSS defined in HTML?',
 		body: null,
 		options: [
@@ -3607,7 +3285,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 160,
 		head: 'Which of the following statements is TRUE for CSS?',
 		body: null,
 		options: [
@@ -3621,7 +3298,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 161,
 		head: 'In CSS, margin collapsing only happens with?',
 		body: null,
 		options: [
@@ -3635,7 +3311,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 162,
 		head: 'Which of the following CSS selectors selects all <p> elements that are the direct child of a <div> element?',
 		body: null,
 		options: ['div p', 'div > p', 'Tdiv + p', 'div ~ p'],
@@ -3643,7 +3318,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 163,
 		head: "In CSS, the box-sizing property is used to control how an element's total width and height are calculated. Which value of box-sizing includes the element's padding and border within its total width and height?",
 		body: null,
 		options: ['content-box', 'padding-box', 'margin-box', 'border-box'],
@@ -3651,7 +3325,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 164,
 		head: 'In CSS, which of the following is NOT an effect of an inert attribute?',
 		body: null,
 		options: [
@@ -3664,7 +3337,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 165,
 		head: 'What elements does the accent-color property target?',
 		body: null,
 		options: [
@@ -3694,7 +3366,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 166,
 		head: 'What are the valid values of the text-align property?',
 		body: null,
 		options: [
@@ -3707,7 +3378,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 167,
 		head: 'What is the difference between visibility: hidden and display: none?',
 		body: null,
 		options: [
@@ -3722,7 +3392,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 168,
 		head: 'Which of the following is NOT a valid CSS selector?',
 		body: null,
 		options: ['`p`', '`.class`', '`#id`', '`-`'],
@@ -3730,7 +3399,6 @@ const questions = [
 	},
 	{
 		topic: 'CSS',
-		num: 169,
 		head: 'What is the difference between a class and an id in CSS?',
 		body: null,
 		options: [
@@ -3744,7 +3412,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 1,
 		head: 'What is the purpose of the `<track>` tag, and when should it be used?',
 		body: null,
 		options: [
@@ -3758,7 +3425,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 2,
 		head: 'What are the best examples of void elements?',
 		body: null,
 		options: [
@@ -3771,7 +3437,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 3,
 		head: 'In HTML5, which tag or tags embed a webpage inside of a webpage?',
 		body: null,
 		options: [
@@ -3784,7 +3449,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 4,
 		head: 'Where do `<header>` and `<footer>` tags typically occur?',
 		body: null,
 		options: [
@@ -3797,7 +3461,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 5,
 		head: 'What is the best way to apply bold styling to text?',
 		body: null,
 		options: ['`<strong>`', 'Use CSS.', '`<bold>`', '`<b>`'],
@@ -3805,7 +3468,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 6,
 		head: 'What is the use of the `<link>` tag?',
 		body: null,
 		options: [
@@ -3819,7 +3481,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 7,
 		head: 'What should fill the two blanks in the HTML code below?',
 		body: '```HTML\n<address ______ _____>\n<span itemprop="streetAddress">6410 Via Real</span><br />\n<span itemprop="addressLocality">Carpinteria</span>,\n<span itemprop="addressRegion">CA</span>\n<span itemprop="addressCode">93013</span>\n</address>\n```',
 		options: [
@@ -3832,7 +3493,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 8,
 		head: 'What is the use of the `<aside>` element?',
 		body: null,
 		options: [
@@ -3846,7 +3506,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 9,
 		head: 'With which tags is the `<source>` element associated?',
 		body: null,
 		options: [
@@ -3859,7 +3518,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 10,
 		head: 'What is NOT a valid attribute for the `<textarea>` element?',
 		body: null,
 		options: ['readonly', 'max', 'form', 'spellcheck'],
@@ -3867,7 +3525,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 12,
 		head: 'What is the purpose of the `<samp>` element?',
 		body: null,
 		options: [
@@ -3880,7 +3537,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 13,
 		head: 'When should you use `<ol>` and `<ul>` elements?',
 		body: null,
 		options: [
@@ -3894,7 +3550,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 14,
 		head: 'What is the difference between the post and get methods in a form?',
 		body: null,
 		options: [
@@ -3908,7 +3563,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 15,
 		head: 'What is the difference between the `<div>` and `<span>` tags?',
 		body: null,
 		options: [
@@ -3922,7 +3576,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 16,
 		head: 'What should fill the blank in the HTML code below?',
 		body: '```HTML\n<form method="post" action="mailto:info@linkedin.com" ____="text/plain"></form>\n```',
 		options: ['enctype', 'media', 'type', 'rel'],
@@ -3930,7 +3583,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 17,
 		head: 'What is the correct markup for the `alt` attribute of an image?',
 		body: '```HTML\n<img src="cubism.jpg" alt="Version of ""Whistler\'s Mother"" in cubist style">\n```\n```HTML\n<img src="cubism.jpg" alt="Version of "Whistler\'s Mother" in cubist style">\n```\n```HTML\n<img src="cubism.jpg" alt=\'Version of "Whistler&apos;s Mother" in cubist style\' />\n```\n```HTML\n<img src="cubism.jpg" alt="Version of \\"Whistler\'s Mother\\" in cubist style">\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3938,7 +3590,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 18,
 		head: 'In the code below, what is the purpose of the **id** attribute?',
 		body: '```HTML\n<p id="warning">Be careful when installing this product.</p>\n```',
 		options: [
@@ -3952,7 +3603,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 19,
 		head: 'What is the best semantic markup for the sentence shown?',
 		body: '```\nOn July 21, 1969, Neil Armstrong said, "One small step for man, one giant leap for mankind."\n```\n```HTML\n<p>\nOn <time datetime="1969-07-21">July 21, 1969</time>, Neil Armstrong said,\n<q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"\n>One small step for man, one giant leap for mankind.</q\n>\n</p>\n```\n```HTML\n<p>\nOn July 21, 1969, Neil Armstrong said,\n<q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"\n>"One small step for man, one giant leap for mankind."</q\n>\n</p>\n```\n```HTML\n<p>\nOn July 21, 1969, Neil Armstrong said,\n<q>"One small step for man, one giant leap for mankind."</q>\n</p>\n```\n```HTML\n<p>\nOn <time datetime="07-21-1969">July 21, 1969</time>, Neil Armstrong said,\n<q cite="https://www.hq.nasa.gov/alsj/a11l/a11.html"\n>One small step for man, one giant leap for mankind.</q\n>\n</p>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3960,7 +3610,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 20,
 		head: 'What should fill the blank in this HTML code?',
 		body: '```HTML\n<a href="https://es.yahoo.com/" hreflang="____" target="_blank">Visita Yahoo</a>\n```',
 		options: ['es', 'es-spanish', 'es-es', 'spanish'],
@@ -3969,7 +3618,6 @@ const questions = [
 
 	{
 		topic: 'HTML',
-		num: 22,
 		head: 'What is the best way to code three choices within a form so that the user can select only one item?',
 		body: '```HTML\n<label for="example">Make a choice:</label>\n<datalist id="example">\n<option value="Choice 1"></option>\n<option value="Choice 2"></option>\n<option value="Choice 3"></option>\n</datalist>\n```\n```HTML\n<p>Make a choice:</p>\n<input id="choices" name="example" />\n\n<datalist value="choices">\n<option value="Choice 1"></option>\n<option value="Choice 2"></option>\n<option value="Choice 3"></option>\n</datalist>\n```\n```HTML\n<label for="example">Make a choice:</label>\n<input list="example" id="choices" name="choices" />\n\n<datalist id="choices">\n<option value="Choice 1">Choice 1</option>\n<option value="Choice 2">Choice 2</option>\n<option value="Choice 3">Choice 3</option>\n</datalist>\n```\n```HTML\n<label for="example">Make a choice:</label>\n<input list="choices" id="example" name="example" />\n\n<datalist id="choices">\n<option value="Choice 1"></option>\n<option value="Choice 2"></option>\n<option value="Choice 3"></option>\n</datalist>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -3977,7 +3625,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 23,
 		head: 'How do you confirm that a document is written in HTML5?',
 		body: null,
 		options: [
@@ -3991,7 +3638,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 24,
 		head: 'What does the code shown below accomplish?',
 		body: '```html\n<picture>\n<source srcset="image1.jpg" media="(min-width: 1000px)" />\n<source srcset="image2.jpg" media="(min-width: 750px)" />\n<img src="image3.jpg" />\n</picture>\n```',
 		options: [
@@ -4005,7 +3651,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 26,
 		head: 'What is the `<hr>` tag typically used for? / Alt.: What is the semantic meaning of the `<hr>` tag?',
 		body: '`This is a confusing question and there can be arguments for both the second and the third options being correct.`',
 		options: [
@@ -4019,7 +3664,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 27,
 		head: 'What should fill the two blanks in the HTML code below?',
 		body: '```HTML\n<section itemscope itemtype="http://schema.org/Restaurant">\n<h1 itemprop="name">Nadia\'s Garden</h1>\n<p itemscope ______ ______>\n<span itemprop="ratingValue">4.5</span> stars - based on\n<span itemprop="reviewCount">120</span> reviews\n</p>\n</section>\n```',
 		options: [
@@ -4033,7 +3677,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 28,
 		head: 'Which HTML snippet links back to the very top of a webpage?',
 		body: '```HTML\n<a id="top"></a>\n\n<!-- placed at the top of the page -->\n\n<a href="#top">back to top</a>\n```\n```HTML\n<a name="top"></a>\n\n<!-- placed at the top of the page -->\n\n<a href="#top">back to top</a>\n```\n```HTML\n<a href="#">back to top</a> <a href="#top">back to top</a>\n```\n```HTML\n<button href="#">back to top</button> <button href="#top">back to top</button>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -4041,7 +3684,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 29,
 		head: 'Which three tags were deprecated in HTML4 but returned to HTML5?',
 		body: null,
 		options: [
@@ -4054,7 +3696,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 30,
 		head: 'The **\\_** tag is used for marking up a short code snippet, while the \\_ tag is used for marking up a longer block of code',
 		body: '1. [Source: MDN Web Docs code](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)\n2. [Source: MDN Web Docs pre](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre)',
 		options: [
@@ -4067,7 +3708,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 31,
 		head: 'What does the `<label>` element do?',
 		body: null,
 		options: [
@@ -4081,7 +3721,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 32,
 		head: 'To get a link to open in a new window or tab, use the **\\_** attribute',
 		body: null,
 		options: ['`_blank`', '`_self`', '`_new`', '`_parent`'],
@@ -4089,7 +3728,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 33,
 		head: 'What is the most semantically accurate way to mark up the sentence shown below? Note: "TLAs" stands for "three-letter acronyms."',
 		body: '```HTML\n<p>We are fond of our <span title="three-letter acronyms">TLAs</span> in web design.</p>\n```\n```HTML\n<p>We are fond of our TLAs in web design.</p>\n```\n```HTML\n<p>we are fond of our <abbr title="three-letter acronyms">TLAs</abbr> in web design.</p>\n```\n```HTML\n<p>we are fond of our <acronym title="three-letter acronym">TLAs</acronym> in web design.</p>\n```\n`<acronym>` has been removed in HTML5 and shouldn\'t be used anymore. Instead, web developers should use the `<abbr>` element.',
 		options: ['A', 'B', 'C', 'D'],
@@ -4097,7 +3735,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 35,
 		head: 'What should fill in the blank below?',
 		body: '```HTML\n<link href="phone.css" rel="stylesheet" _____="print" />\n```',
 		options: ['title', 'type', 'device', 'media'],
@@ -4105,7 +3742,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 37,
 		head: 'Which choice uses the correct terminology in describing this markup: `<p>info</p>`?',
 		body: null,
 		options: [
@@ -4119,7 +3755,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 38,
 		head: 'What is the difference between `<input type="submit" value="click me">` and `<button type="submit">Click me</button>`?',
 		body: null,
 		options: [
@@ -4133,7 +3768,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 39,
 		head: 'What is the best semantic way to indicate that text refers to keyboard entry?',
 		body: null,
 		options: [
@@ -4146,7 +3780,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 40,
 		head: 'What does this code do?',
 		body: '```html\n<audio controls>\n<source src="sound.mp3" type="audio/mpeg" />\n<source src="sound.ogg" type="audio/ogg" />\n<source src="sound.wav" type="audio/wav" />\n</audio>\n```',
 		options: [
@@ -4160,7 +3793,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 41,
 		head: 'What attribute applies a keyboard shortcut hint to the current element?',
 		body: null,
 		options: ['`accesskey`', '`shortcut`', '`keyboard`', '`access`'],
@@ -4168,7 +3800,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 42,
 		head: 'What is the correct way to code a link that, when clicked, will send an email to `email@example.com` with the subject of "Hello"?',
 		body: null,
 		options: [
@@ -4182,7 +3813,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 43,
 		head: 'Which tag is the root element of an HTML document?',
 		body: '`The <html> tag is the root element of an HTML document, which means that it contains all the contents and tags of the HTML document within it. The HTML element represents the root of a document.`\n1. [Source](https://www.interviewbit.com/html-mcq/)\n2. [Source](https://www.w3.org/TR/2010/WD-html-markup-20100624/html.html)',
 		options: ['`<!DOCTYPE html>`', '`<html>`', '`<body>`', '`<root>`'],
@@ -4190,7 +3820,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 45,
 		head: 'Which choice is NOT a legal value for the **name** attribute within a `<meta>` tag?',
 		body: null,
 		options: ['charset', 'viewport', 'generator', 'author'],
@@ -4198,7 +3827,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 46,
 		head: 'Which form is coded correctly?',
 		body: '```HTML\n<form>\n<legend>Title</legend>\n<fieldset>\n<label for="name">Your name:</label>\n<input type="text" name="name" id="name" />\n<button type="submit">Submit</button>\n</fieldset>\n</form>\n```\n```HTML\n<form>\n<fieldset>\n<legend>Title</legend>\n<p>Your name:</p>\n<input type="text" name="name" id="name" />\n<input type="submit" value="Submit" />\n</fieldset>\n</form>\n```\n```HTML\n<form>\n<fieldset>\n<legend>Title</legend>\n<label for="name">Your name:</label>\n<input type="text" name="name" id="name" />\n<button type="submit">Submit</button>\n</fieldset>\n</form>\n```\n```HTML\n<form>\n<legend>Title</legend>\n<label for="name">Your name:</label>\n<input type="text" name="name" id="name" />\n<input type="submit" value="Submit" />\n</form>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -4206,7 +3834,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 47,
 		head: 'What does the **poster** attribute do in the `<video>` tag?',
 		body: null,
 		options: [
@@ -4220,7 +3847,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 48,
 		head: 'What does this code do?',
 		body: '```HTML\n<audio controls src="sound.mp3" type="audio/mpeg">When does this text display?</audio>\n```',
 		options: [
@@ -4233,7 +3859,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 49,
 		head: 'What is the primary purpose of the `<canvas>` tag?',
 		body: null,
 		options: [
@@ -4246,7 +3871,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 50,
 		head: 'Which choice contains three valid block-level elements?</li>',
 		body: null,
 		options: [
@@ -4259,7 +3883,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 51,
 		head: 'In the code below, what is the purpose of the **lang** attribute?',
 		body: '```HTML\n<p lang="en-GB">Welcome to our wonderful website.</p>\n```',
 		options: [
@@ -4273,7 +3896,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 52,
 		head: 'Which image formats can be displayed by all web browsers?',
 		body: null,
 		options: [
@@ -4286,7 +3908,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 53,
 		head: 'Review the code below. What is the absolute URL for a page called **page.html**?',
 		body: '```HTML\n<base href="http://www.linkedin.com/dir/" />\n```',
 		options: [
@@ -4299,7 +3920,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 54,
 		head: 'What is the correct way to include a stylesheet named **style.css** in the `<head>` of your document?',
 		body: null,
 		options: [
@@ -4312,7 +3932,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 55,
 		head: 'You want to have single spacing in between some lines, like in a poem or an address. Which approach should you use?',
 		body: null,
 		options: [
@@ -4326,7 +3945,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 56,
 		head: 'What does the `<wbr>` tag do?',
 		body: null,
 		options: [
@@ -4340,7 +3958,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 57,
 		head: 'Review the code below. How do you include subnavigation for Link 2 that includes a link?',
 		body: '```HTML\n<nav>\n<ul>\n<li><a href="#">Link 1</a></li>\n<li><a href="#">Link 2</a></li>\n<li><a href="#">Link 3</a></li>\n</ul>\n</nav>\n```\n```HTML\n<nav>\n<ul>\n<li><a href="#">Link 1</a></li>\n<li><a href="#">Link 2</a></li>\n<ul>\n<li><a href="#">Link 2a</a></li>\n</ul>\n<li><a href="#">Link 3</a></li>\n</ul>\n</nav>\n```\n```HTML\n<nav>\n<ul>\n<li><a href="#">Link 1</a></li>\n<li>\n<a href="#">Link 2</a>\n<ul>\n<li><a href="#">Link 2a</a></li>\n</ul>\n</li>\n<li><a href="#">Link 3</a></li>\n</ul>\n</nav>\n```\n```HTML\n<ul>\n<nav>\n<li><a href="#">Link 1</a></li>\n<li>\n<a href="#">Link 2</a>\n<ul>\n<nav>\n<li><a href="#">Link 2a</a></li>\n</nav>\n</ul>\n</li>\n<li><a href="#">Link 3</a></li>\n</nav>\n</ul>\n```\n```HTML\n<nav>\n<ul>\n<li><a href="#">Link 1</a></li>\n<li><a href="#">Link 2</a></li>\n<nav>\n<ul>\n<li><a href="#">Link 2a</a></li>\n</ul>\n</nav>\n<li><a href="#">Link 3</a></li>\n</ul>\n</nav>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -4348,7 +3965,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 58,
 		head: 'What is the correct way to code a comment in HTML?',
 		body: null,
 		options: [
@@ -4361,7 +3977,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 59,
 		head: 'Which statement is **false**?',
 		body: null,
 		options: [
@@ -4374,7 +3989,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 60,
 		head: 'What is the best semantic to use Quotes in HTML?',
 		body: '`Steve Kruz said: "He will Win"`',
 		options: ['`<q>`', '`<quote>`', '`<blockquote>`', '`<notation>`'],
@@ -4382,7 +3996,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 61,
 		head: 'How will a video look displayed on a fully loaded webpage if the `<video>` tag is used and the **autoplay** attribute is not set?',
 		body: null,
 		options: [
@@ -4396,7 +4009,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 62,
 		head: 'What is the correct way to describe an empty element / Alt.: What is the correct way to describe an empty element, such as a line break tag?',
 		body: null,
 		options: [
@@ -4409,7 +4021,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 63,
 		head: 'What is the purpose of async in this code?',
 		body: '`<script async src="myscript.js"></script>`',
 		options: [
@@ -4422,7 +4033,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 64,
 		head: 'What does this code do on a page you are visiting for the first time?',
 		body: '`<audio autoplay loop src="sound.mp3" type="audio/mpeg"></audio>`\n1. [(MDN) audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio),\n2. [(MDN) autoplay](https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide)',
 		options: [
@@ -4436,7 +4046,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 65,
 		head: 'What is the difference between the `<head>` and `<header>` tags?',
 		body: null,
 		options: [
@@ -4449,7 +4058,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 66,
 		head: 'In this code, what is the purpose of defer?',
 		body: '`<script defer src="myscript.js"></script>`',
 		options: [
@@ -4462,7 +4070,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 67,
 		head: 'The code below contains some errors. Which choice corrects all of the errors?',
 		body: '```HTML\n<table>\n<tr>\nCell 1\n</tr>\n<td>Cell 2</td>\n<caption>\nA table\n</caption>\n</table>\n```\n```HTML\n<caption>\nA table\n</caption>\n<table>\n<td>\n<tr>\nCell 1\n</tr>\n<tr>\nCell 2\n</tr>\n</td>\n</table>\n```\n```HTML\n<caption>\nA table\n</caption>\n<table>\n<tr>\n<td>Cell 1</td>\n<td>Cell 2</td>\n</tr>\n</table>\n```\n```HTML\n<table>\n<caption>\nA table\n</caption>\n<tr>\n<td>Cell 1</td>\n<td>Cell 2</td>\n</tr>\n</table>\n```\n```HTML\n<table>\n<tr>\n<td>Cell 1</td>\n<td>Cell 2</td>\n</tr>\n<caption>\nA table\n</caption>\n</table>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -4471,7 +4078,6 @@ const questions = [
 
 	{
 		topic: 'HTML',
-		num: 69,
 		head: 'When should you use the `<article>` element?',
 		body: null,
 		options: [
@@ -4485,7 +4091,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 70,
 		head: 'Which list comprises three empty elements?',
 		body: '```HTML\n<area />\n<embed />\n<strong></strong>\n```\n```HTML\n<input />\n<br />\n<p></p>\n```\n```HTML\n<link>\n<meta>\n<title>\n```\n```HTML\n<wbr />\n<base />\n<source />\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -4493,7 +4098,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 71,
 		head: 'Which snippet of HTML, when clicked, makes a phone call on a mobile device?',
 		body: null,
 		options: [
@@ -4506,7 +4110,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 72,
 		head: 'What is the purpose of the `class` attribute?',
 		body: 'separated by spaces.\nas you wish, separated by spaces.',
 		options: [
@@ -4520,20 +4123,16 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 73,
 		head: 'Which choice is not a legal type attribute for the `<input>` tag?',
 		body: null,
 		options: [
 			'`<input type="color">`',
 			'`<input type="tel">`',
 			'`<input type="week">`',
-			'`<input type="num">`',
 		],
-		correct_answer: '`<input type="num">`',
 	},
 	{
 		topic: 'HTML',
-		num: 74,
 		head: 'What is the most semantic way to mark up this sentence so that "happy talk must die" is rendered as an inline quote?',
 		body: 'As Steve Krug once said, happy talk must die.\n`Most browsers will display q tags as inline elements with quotes`',
 		options: [
@@ -4547,7 +4146,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 75,
 		head: 'What is the most semantically accurate way to make up a main navigation bar, displayed in a horizontal direction?',
 		body: '```html\n<p>\n<a href="index.html">Home</a>\n<a href="about.html">About</a>\n<a href="contact.html">Contact</a>\n</p>\n```\n```html\n<nav>\n<a href="index.html">Home</a>\n<a href="about.html">About</a>\n<a href="contact.html">Contact</a>\n</nav>\n```\n```html\n<nav>\n<ol>\n<li><a href="index.html">Home</a></li>\n<li><a href="about.html">About</a></li>\n<li><a href="contact.html">Contact</a></li>\n</ol>\n</nav>\n```\n```html\n<nav>\n<ul>\n<li><a href="index.html">Home</a></li>\n<li><a href="about.html">About</a></li>\n<li><a href="contact.html">Contact</a></li>\n</ul>\n</nav>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -4555,7 +4153,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 77,
 		head: 'What is the primary purpose of HTML?',
 		body: null,
 		options: [
@@ -4569,7 +4166,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 78,
 		head: 'For the HTML code below, when will "Sample Text" display to the browser?',
 		body: '```html\n<noscript>Sample Text</noscript>\n```',
 		options: [
@@ -4583,7 +4179,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 79,
 		head: 'How will this code render by default in most web browsers?',
 		body: '```HTML\n<details>\n<h4>Mixed Berry Tart.</h4>\n<p>\nRaspberries, blueberries, and strawberries on top of a creamy filling served in a crispy tart.\n</p>\n</details>\n```\n![A](images/Q84-1.jpg)\n![B](images/Q84-2.jpg)\n![C](images/Q84-3.jpg)\n![D](images/Q84-4.jpg)',
 		options: ['A', 'B', 'C', 'D'],
@@ -4591,7 +4186,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 80,
 		head: 'What is the difference between the `<svg>` and `<canvas>`?',
 		body: null,
 		options: [
@@ -4605,7 +4199,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 81,
 		head: 'What is the difference between the _readonly_ and _disabled_ attributes for the `<textarea>` element?',
 		body: '1. [Source: readonly](https://www.w3schools.com/tags/att_readonly.asp)\n2. [Source: disabled](https://www.w3schools.com/tags/att_disabled.asp)',
 		options: [
@@ -4619,7 +4212,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 82,
 		head: 'In this code, what is _target_?',
 		body: '`<a target="_blank">...</a>`',
 		options: ['an attribute', 'a tag', 'content', 'an element'],
@@ -4627,7 +4219,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 83,
 		head: 'What is the correct way to add a submit URL to a `button` element?',
 		body: '```HTML\n<button submit="http://example.com/process">Process data</button>\n```\n```HTML\n<button action="http://example.com/process">Process data</button>\n```\n```HTML\n<button formaction="http://example.com/process">Process data</button>\n```\n```HTML\n<button method="http://example.com/process">Process data</button>\n```\n`formation — The URL that processes the information submitted by the button. Overrides the action attribute of the button\'s form owner. Does nothing if there is no form owner.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-formaction)',
 		options: ['A', 'B', 'C', 'D'],
@@ -4635,7 +4226,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 84,
 		head: 'Which is the best markup to produce this text?',
 		body: "`x<y&z>w`\n`This question has an issue, however this answer will count as correct`\n`It's too strange a question because all of that methods doesn't work. The good method is &amp, &lt, &gt using.`",
 		options: [
@@ -4648,7 +4238,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 85,
 		head: 'What is wrong with this code snippet?',
 		body: '```HTML\n<label>Address:</label> <input type="text" name="address" id="address-input" />\n```',
 		options: [
@@ -4662,7 +4251,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 86,
 		head: 'What is the default method for form submission?',
 		body: null,
 		options: ['GET', 'POST', 'PUT', 'SUBMIT'],
@@ -4670,7 +4258,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 87,
 		head: 'Which is the most semantically correct markup for a side comment in small print?',
 		body: null,
 		options: [
@@ -4684,7 +4271,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 88,
 		head: 'Which choice will produce the Spanish word <i>canción</i>?',
 		body: null,
 		options: [
@@ -4697,7 +4283,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 89,
 		head: 'What is the purpose of `<caption>`?',
 		body: null,
 		options: [
@@ -4710,7 +4295,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 90,
 		head: 'The `value` attribute is associated with which set of tags?',
 		body: '```HTML\n<li>\n<input />\n<option></option>\n</li>\n```\n```HTML\n<input>\n<option>\n<textarea>\n```\n```HTML\n<button>\n<input />\n<form></form>\n</button>\n```\n```HTML\n<input /> <label> <meter></meter></label>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -4718,7 +4302,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 91,
 		head: 'What is wrong with this code?',
 		body: '`<img src="https://source.unsplash.com/random">`',
 		options: [
@@ -4731,7 +4314,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 92,
 		head: 'Which choice is the most semantically correct markup for specifying the first definition of a term?',
 		body: null,
 		options: [
@@ -4745,7 +4327,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 93,
 		head: 'Which choice is the best way to code three choices within a form so that the user can select multiple items?',
 		body: '```HTML\n<input type="radio" name="example" /> Choice 1 <br />\n<input type="radio" name="example" /> Choice 2 <br />\n<input type="radio" name="example" /> Choice 3\n```\n```HTML\n<input type="checkbox" name="example" /> Choice 1 <br />\n<input type="checkbox" name="example" /> Choice 2 <br />\n<input type="checkbox" name="example" /> Choice 3\n```\n```HTML\n<label><input type="checkbox" name="example" /> Choice 1</label><br />\n<label><input type="checkbox" name="example" /> Choice 2</label><br />\n<label><input type="checkbox" name="example" /> Choice 3</label>\n```\n```HTML\n<label><input type="radio" name="example" /> Choice 1</label><br />\n<label><input type="radio" name="example" /> Choice 2</label><br />\n<label><input type="radio" name="example" /> Choice 3</label>\n```\n`<input> elements of type checkbox are rendered by default as boxes that are checked (ticked) when activated as you might see in an official government paper form. The exact appearance depends upon the operating system configuration under which the browser is running. Generally, this is a square but it may have rounded corners.`',
 		options: [':', ':', ':', ':'],
@@ -4753,7 +4334,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 94,
 		head: 'How would you mark up a piece of ASCII art (an emoticon) in an accessible way?',
 		body: null,
 		options: [
@@ -4767,7 +4347,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 95,
 		head: 'Which example is a standard way in HTML5 for adding author metadata to a page?',
 		body: null,
 		options: [
@@ -4780,7 +4359,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 96,
 		head: 'Given the following requirements, select the correct `input` configuration: An `input` that allows the user to select from a range of integer values between 0 and 100 (inclusive) in increments of 5',
 		body: '`<input> elements of type range let the user specify a numeric value which must be no less than a given value and no more than another given value. The step attribute is a number that specifies the granularity that the value must adhere to.`',
 		options: [
@@ -4793,7 +4371,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 97,
 		head: 'Which choice is a valid markup for a `<head>` element?',
 		body: '`The <head> HTML element contains machine-readable information (metadata) about the document, like its title. The <data> tag is used to add a machine-readable translation of a given content.`',
 		options: [
@@ -4807,7 +4384,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 98,
 		head: 'You need to add comments to the company blog. What is the most semantic markup for a list of comments?',
 		body: '```html\n<aside>\n<h3>Comments</h3>\n<article>First comment.</article>\n<article>Second comment.</article>\n</aside>\n```\n```html\n<div aria="dpub-comments">\n<h3>Comments</h3>\n<div aria="dpub-comment">First comment.</div>\n<div aria="dpub-comment">Second comment.</div>\n</div>\n```\n```html\n<aside>\n<h3>Comments</h3>\n<aside>First comment.</aside>\n<aside>Second comment.</aside>\n</aside>\n```\n```html\n<div typeof="comments">\n<h3>Comments</h3>\n<div typeof="comment">First comment.</div>\n<div typeof="comment">Second comment.</div>\n</div>\n```\n`The <article> HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Example: a user-submitted comment.`',
 		options: ['A', 'B', 'C', 'D'],
@@ -4815,7 +4391,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 99,
 		head: 'To make something editable by the user, you need to set the **\\_** attribute to **\\_**',
 		body: '`The contenteditable global attribute is an enumerated attribute indicating if the element should be editable by the user. If so, the browser modifies its widget to allow editing. The attribute must take one of the following values: true or an empty string, which indicates that the element is editable; false, which indicates that the element is not editable.`',
 		options: [
@@ -4828,7 +4403,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 100,
 		head: 'Which choice is the standard way to include a value in a form without making it visible to or editable by the user?',
 		body: "`<input> elements of type hidden let web developers include data that cannot be seen or modified by users when a form is submitted. For example, the ID of the content that is currently being ordered or edited, or a unique security token. Hidden inputs are completely invisible in the rendered page, and there is no way to make it visible in the page's content.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden)",
 		options: [
@@ -4842,7 +4416,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 101,
 		head: 'What is the semantic way to add an identifying title to a table?',
 		body: '`The <caption> HTML element specifies the caption (or title) of a table.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)',
 		options: [
@@ -4855,7 +4428,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 102,
 		head: "Which image file referenced in this `img` element's `srcset` attribute should a browser on a small mobile phone load?",
 		body: '```html\n<img\nsrcset="medium.jpg 320w, large.jpg 1280w"\nsrc="small.jpg"\nalt="Our favorite image"\nsizes="(min-width: 1200px) 640px, 100vw"\n/>\n```\n`The browser will: 1. Look at its device width. 2. Work out which media condition in the sizes list is the first one to be true. 3. Look at the slot size given to that media query. 4. Load the image referenced in the srcset list that has the same size as the slot or, if there isn\'t one, the first image that is bigger than the chosen slot size.` [Source](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)',
 		options: ['small.jpg', 'medium.jpg', 'none of them', 'large.jpg'],
@@ -4863,7 +4435,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 103,
 		head: 'Which description is coded correctly?',
 		body: '```HTML\n<dl>\n<dt>Server</dt>\n<dd>Software used to serve webpages, like Apache.</dd>\n<dd>Hardware used to provide data to other computers.</dd>\n<!-- Other terms and descriptions -->\n</dl>\n```\n```HTML\n<dt>\n<dl>Server</dl>\n<dd>Software used to serve webpages, like Apache.</dd>\n<dd> Hardware used to provide data to other computers.</dd>\n<!-- Other terms and descriptions -->\n</dt>\n```\n```HTML\n<dl>\n<dt>Server</dt>\n<dd>Software used to serve webpages, like Apache.</dd>\n<dt>Hardware used to provide data to other computers.</dt>\n<!-- Other terms and descriptions -->\n</dl>\n```\n```HTML\n<dl>\n<dd>Server</dd>\n<dt>Software used to serve webpages, like Apache.</dt>\n<dt>Hardware used to provide data to other computers.</dt>\n<!-- Other terms and descriptions -->\n</dl>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -4871,7 +4442,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 104,
 		head: 'What is wrong with this code?',
 		body: '```html\n<ul>\n<h2>Espresso Drinks</h2>\n<li>Espresso</li>\n<li>Latte</li>\n<li>Cappuccino</li>\n<li>Mocha</li>\n</ul>\n```\n`ul content model only accepts "Zero or more li and script-supporting elements".` [Source](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)',
 		options: [
@@ -4885,7 +4455,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 105,
 		head: 'A designer gave you CSS code that should run only when the device rendering the page is in dark mode. How would you embed that code?',
 		body: null,
 		options: [
@@ -4899,7 +4468,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 106,
 		head: 'How would you mark up a header for a table row?',
 		body: '```HTML\n<table>\n<thead scope="row">\n<th row="1">Header</th>\n</thead>\n<tr>\n<td>10</td>\n<td>18</td>\n</tr>\n</table>\n```\n```HTML\n<table>\n<tr>\n<th scope="row">Header</th>\n<td>10</td>\n<td>18</td>\n</tr>\n</table>\n```\n```HTML\n<table>\n<tr>\n<thead scope="row">\nHeader\n</thead>\n<td>10</td>\n<td>18</td>\n</tr>\n</table>\n```\n```HTML\n<table>\n<tr>\n<th>Header</th>\n<td>10</td>\n<td>18</td>\n</tr>\n</table>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -4907,7 +4475,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 107,
 		head: 'Which statement is correct?',
 		body: null,
 		options: [
@@ -4921,7 +4488,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 108,
 		head: 'Users report that a form is not working. What is the culprit?',
 		body: '```HTML\n<form action="/choices" disabled>\n<fieldset disabled>\n<legend>choices</legend>\n<label>Choice 1 <input type="radio" name="choice" value="choice1" /></label>\n<label>Choice 2 <input type="radio" name="choice" value="choice1" /></label>\n<label>Choice 3 <input type="radio" name="choice" value="choice1" /></label>\n<label>Choice 4 <input type="radio" name="choice" value="choice1" /></label>\n<button>Choose!</button>\n</fieldset>\n</form>\n```\nA disabled fieldset is unusable and un-clickable. [Source](https://www.w3schools.com/tags/att_fieldset_disabled.asp)',
 		options: [
@@ -4934,7 +4500,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 109,
 		head: 'Which description list is coded correctly?',
 		body: '```HTML\n<dl>\n<dt>Server</dt>\n<dd>Software used to server webpages, like Apache.</dd>\n<dd>Hardware used to provide data to other computers.</dd>\n<!--Other terms and descriptions -->\n</dl>\n```\n```HTML\n<dl>\n<dd>Server</dd>\n<dt>Software used to server webpages, like Apache.</dt>\n<dt>Hardware used to provide data to other computers.</dt>\n<!--Other terms and descriptions -->\n</dl>\n```\n```HTML\n<dt>\n<dl>Server</dl>\n<dd>Software used to server webpages, like Apache.</dd>\n<dd>Hardware used to provide data to other computers.</dd>\n<!--Other terms and descriptions -->\n</dt>\n```\n```HTML\n<dl>\n<dt>Server</dt>\n<dd>Software used to server webpages, like Apache.</dd>\n<dt>Hardware used to provide data to other computers.</dt>\n<!--Other terms and descriptions -->\n</dl>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -4942,7 +4507,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 110,
 		head: 'what does the a in the HTML tag stand for?',
 		body: null,
 		options: ['assign', 'add tag', 'anchor tag', 'None of the above'],
@@ -4950,7 +4514,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 111,
 		head: 'What is the correct HTML element for inserting a line break?',
 		body: null,
 		options: ['`<break>`', '`<lb>`', '`<br>`', '`<a>`'],
@@ -4958,7 +4521,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 112,
 		head: 'The HTML global attribute, "contenteditable" is used to',
 		body: null,
 		options: [
@@ -4972,7 +4534,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 113,
 		head: "HTML elements that aren't meant to store content or other elements are called **\\_** elements",
 		body: null,
 		options: ['void', 'independent', 'empty', 'paragraph'],
@@ -4980,7 +4541,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 114,
 		head: 'The **\\_** attribute of an HTML label element is a referencing mechanism to state what input or element the label is tied to',
 		body: null,
 		options: ['to', 'of', 'with', 'for'],
@@ -4988,7 +4548,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 115,
 		head: 'Coding in HTML provides which of the following?',
 		body: null,
 		options: [
@@ -5001,7 +4560,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 116,
 		head: 'Which HTML element is the container for all the renderable aspects of the document?',
 		body: null,
 		options: ['head', 'body', 'title', 'meta'],
@@ -5009,7 +4567,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 117,
 		head: 'The "h" in the HTML h1 tag is short for **\\_**',
 		body: null,
 		options: ['head', 'horizontal', 'hypertext', 'heading'],
@@ -5017,7 +4574,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 118,
 		head: 'Which is an invalid use of the `<a>` element?',
 		body: '```HTML\n<a href="#additional-information" class="Card">\n<video src="media.mp4" width="400" height="300"></video>\n</a>\n```\n```HTML\n<a href="#additional-information" class="Card">\n<details>\n<summary>Additional Information</summary>\n</details>\n</a>\n```\n```HTML\n<a href="#additional-information" class="Card">\n<p>Additional Information</p>\n<p></p\n></a>\n```\n```html\n<a href="#additional-information" class-"Card">\n<img src="media.jpeg" alt="More information"></video>\n</a>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -5025,7 +4581,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 119,
 		head: 'How to display preformatted text in HTML?',
 		body: null,
 		options: ['`<p>`', '`<pre>`', '`<hr>`', 'All of the above'],
@@ -5033,7 +4588,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 120,
 		head: 'Which is a valid title element?',
 		body: null,
 		options: [
@@ -5046,7 +4600,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 121,
 		head: 'Which link contains a valid URL?',
 		body: null,
 		options: [
@@ -5060,7 +4613,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 122,
 		head: 'Which example is missing a mandatory closing tag, making it invalid?',
 		body: null,
 		options: [
@@ -5073,7 +4625,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 123,
 		head: 'What is the semantic method for marking up a video with a caption in browsers that support it?',
 		body: null,
 		options: [
@@ -5087,7 +4638,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 124,
 		head: 'A white paper has a sidebar and endnotes, both of which are complementary to the main text. How would you mark them up to make their distinct roles more broadly accessible?',
 		body: '```HTML\n<custom-sidebar aria-label-"Sidebar"›Sidebar...</custom-sidebar><custom-footnote aria-\nlabel="Endnotes">Endnotes...</custom-footnote>\n```\n```HTML\n<aside role="sidebar">Sidebar...</aside>\n<aside role="notes">Endnotes...</aside>\n```\n```HTML\n<aside role="complementary">Sidebar...</aside>\n<aside role="supplementary">Endnotes...</aside>\n```\n```HTML\n<aside aria-label-"Sidebar">Sidebar...</aside><aside aria-label="Endnotes">Endnotes...</aside>\n```',
 		options: ['A', 'B', 'C', 'D'],
@@ -5095,7 +4645,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 125,
 		head: 'A white paper has a sidebar and endnotes, both of which are complementary to the main text. How would you mark them up to make their distinct roles more broadly accessible?',
 		body: null,
 		options: [
@@ -5109,7 +4658,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 126,
 		head: 'Which video example will autoplay in most browsers?',
 		body: null,
 		options: [
@@ -5122,7 +4670,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 127,
 		head: 'In which order will these scripts execute, assuming they all take the same time to download?',
 		body: '```HTML\n<script type="module" src="module.js"></script>\n// external module\n<script type="async" src="module.js"></script>\n// async\n<script type="defer" src="module.js"></script>\n// defer\n<script type="module" src="module.js">\n// inline module\n</script>\n```',
 		options: [
@@ -5135,7 +4682,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 128,
 		head: 'What is the backward-compatible method of turning a circle in an SVG into a link?',
 		body: null,
 		options: [
@@ -5149,7 +4695,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 129,
 		head: 'Users report that a form is not working. What is the culprit?',
 		body: '```HTML\n<form action="/choices" disabled>\n<fieldset disabled>\n<legend>Choices</legends>\n<label>Choice 1 <input type="radio" name="choice" value="choice1" /></label>\n<label>Choice 2 <input type="radio" name="choice" value="choice2" /></label>\n<label>Choice 3 <input type="radio" name="choice" value="choice3" /></label>\n<label>Choice 4 <input type="radio" name="choice" value="choice4" /></label>\n<button>Choose!</button>\n</fieldset>\n</form>\n```',
 		options: [
@@ -5162,7 +4707,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 130,
 		head: 'What is wrong with this table?',
 		body: '```HTML\n<table>\n<legend>A two body table!</legend>\n<col />\n<col />\n<tbody>\n<tr>\n<td>Cell 1</td>\n<td>Cell 1</td>\n</tr>\n</tbody>\n<tbody>\n<tr>\n<td>Cell 1</td>\n<td>Cell 1</td>\n</tr>\n</tbody>\n</table>\n```',
 		options: [
@@ -5175,7 +4719,6 @@ const questions = [
 	},
 	{
 		topic: 'HTML',
-		num: 131,
 		head: 'In this code, what is the purpose of the `id` attribute?',
 		body: '```HTML\n<p id="warning">Be careful when installing this product.</p>\n```',
 		options: [

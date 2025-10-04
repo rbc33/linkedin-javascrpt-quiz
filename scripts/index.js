@@ -2,10 +2,62 @@ import data from './data.js'
 import { Question } from './question.js'
 import { Quiz } from './quiz.js'
 
+const ul = document.querySelector('.question')
+const topic = document.querySelector('.topics')
+topic.style.display = 'block'
+ul.style.display = 'none'
+
+const selectedTopics = new Set()
+
+// Create start button
+const startButton = document.createElement('button')
+startButton.textContent = 'Start Quiz'
+startButton.classList.add('start-button')
+
+// Add start button after topics
+topic.after(startButton)
+
+const topics = ['CSS', 'HTML', 'JavaScript']
+topics.forEach((t, i) => {
+	const input = document.createElement('input')
+	const label = document.createElement('label')
+	const br = document.createElement('br')
+
+	input.type = 'checkbox'
+	input.value = t
+	input.id = t
+	input.name = t
+	label.textContent = t
+	label.setAttribute('for', input.id)
+	topic.appendChild(input)
+	topic.appendChild(label)
+	topic.appendChild(br)
+	console.log({ input })
+	input.addEventListener('change', (e) => {
+		if (e.target.checked) {
+			selectedTopics.add(e.target.value)
+		} else {
+			selectedTopics.delete(e.target.value)
+		}
+	})
+})
+startButton.addEventListener('click', () => {
+	if (selectedTopics.size > 0) {
+		// Filter questions by selected topics
+		quiz.filterQuestionsByTopic(...selectedTopics)
+		quiz.shuffleQuestions()
+
+		// Toggle visibility
+		topic.style.display = 'none'
+		ul.style.display = 'block'
+		startButton.style.display = 'none'
+	}
+})
+
 const questions = data
 	.map((q) => {
 		if (!q.body) {
-			return new Question(q.topic, q.num, q.head, q.options, q.correct_answer)
+			return new Question(q.topic, q.head, q.options, q.correct_answer)
 		}
 		return null
 	})
@@ -14,8 +66,6 @@ const questions = data
 const quiz = new Quiz(questions, 300, 300)
 quiz.filterQuestionsByTopic('HTML')
 quiz.shuffleQuestions()
-
-const ul = document.querySelector('.question')
 
 quiz.questions.forEach((question, i) => {
 	const li = document.createElement('li')
