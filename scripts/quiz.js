@@ -1,47 +1,38 @@
 export class Quiz {
 	constructor(questions, timeLimit, timeRemaining) {
-		this.questions = questions
+		this.questions = [...questions]
 		this.timeLimit = timeLimit
 		this.timeRemaining = timeRemaining
 		this.correctAnswers = 0
 		this.currentQuestionIndex = 0
 	}
 
-	getQuestion() {
-		return this.questions[this.currentQuestionIndex]
-	}
+	filterAndShuffle(...topics) {
+		// Filter by selected topics
+		this.questions = this.questions.filter((question) =>
+			topics.includes(question.topic)
+		)
 
-	moveToNextQuestion() {
-		this.currentQuestionIndex++
-	}
-
-	shuffleQuestions() {
-		let len = this.questions.length
-
-		for (let i = 0; i < len; i++) {
-			let randomIndex = Math.floor(Math.random() * len)
-
-			;[this.questions[i], this.questions[randomIndex]] = [
-				this.questions[randomIndex],
+		// Shuffle using Fisher-Yates
+		const len = this.questions.length
+		for (let i = len - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1))
+			;[this.questions[i], this.questions[j]] = [
+				this.questions[j],
 				this.questions[i],
 			]
 		}
-		this.questions = this.questions.slice(0, 24)
-	}
 
-	checkAnswer(answer) {
-		if (answer === this.questions[this.currentQuestionIndex].answer) {
-			this.correctAnswers++
-		}
-	}
-
-	hasEnded() {
-		return this.currentQuestionIndex < this.questions.length ? false : true
-	}
-
-	filterQuestionsByTopic(topic1, topic2, topic3) {
-		this.questions = this.questions.filter(
-			(q) => q.topic === topic1 || q.topic === topic2 || q.topic === topic3
+		// Limit to exactly 25 questions
+		this.questions = this.questions.slice(0, 25)
+		console.log(
+			`Questions after filtering and shuffling: ${this.questions.length}`
 		)
+
+		return this.questions
+	}
+
+	getQuestion() {
+		return this.questions[this.currentQuestionIndex]
 	}
 }

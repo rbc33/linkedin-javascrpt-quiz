@@ -2,6 +2,17 @@ import data from './data.js'
 import { Question } from './question.js'
 import { Quiz } from './quiz.js'
 
+const questions = data
+	.map((q) => {
+		if (!q.body) {
+			return new Question(q.topic, q.head, q.options, q.correct_answer)
+		}
+		return null
+	})
+	.filter((q) => q !== null)
+
+const quiz = new Quiz(questions, 300, 300)
+
 const ul = document.querySelector('.question')
 const topic = document.querySelector('.topics')
 topic.style.display = 'block'
@@ -18,7 +29,7 @@ startButton.classList.add('start-button')
 topic.after(startButton)
 
 const topics = ['CSS', 'HTML', 'JavaScript']
-topics.forEach((t, i) => {
+topics.forEach((t) => {
 	const input = document.createElement('input')
 	const label = document.createElement('label')
 	const br = document.createElement('br')
@@ -39,74 +50,66 @@ topics.forEach((t, i) => {
 		} else {
 			selectedTopics.delete(e.target.value)
 		}
+		console.log(selectedTopics)
 	})
 })
 startButton.addEventListener('click', () => {
 	if (selectedTopics.size > 0) {
 		// Filter questions by selected topics
-		quiz.filterQuestionsByTopic(...selectedTopics)
-		quiz.shuffleQuestions()
+		quiz.filterAndShuffle(...selectedTopics)
+
+		// Render filtered questions
+		quiz.questions.forEach((question, i) => {
+			const li = document.createElement('li')
+			console.log({ i })
+
+			const head = document.createElement('h3')
+			head.textContent = question.head
+			li.appendChild(head)
+
+			const optionsList = document.createElement('ul')
+			question.options.forEach((option, index) => {
+				const div = document.createElement('div')
+				const optionInput = document.createElement('input')
+				optionInput.type = 'radio'
+				optionInput.name = `question-${i}`
+				optionInput.value = option
+				optionInput.id = `${index}-${i}`
+				optionInput.classList.add('choice')
+				const optionLabel = document.createElement('label')
+				optionLabel.textContent = option
+				optionLabel.setAttribute('for', optionInput.id)
+
+				div.appendChild(optionInput)
+				div.appendChild(optionLabel)
+				const br = document.createElement('br')
+				div.appendChild(br)
+				optionsList.appendChild(div)
+				optionInput.addEventListener('click', () => {
+					if (optionInput.value === question.correct_answer) {
+						optionsList.classList.add('correct')
+						console.log('correct')
+					} else {
+						optionsList.classList.remove('correct')
+						console.log('wrong')
+						div.style.backgroundColor = 'tomato'
+					}
+					const inputs = li.querySelectorAll('.choice')
+					inputs.forEach((op) => {
+						op.disabled = true
+						if (op.value === question.correct_answer)
+							op.parentNode.style.backgroundColor = '#7CFC00'
+					})
+				})
+			})
+			li.appendChild(optionsList)
+			ul.appendChild(li)
+		})
 
 		// Toggle visibility
 		topic.style.display = 'none'
 		ul.style.display = 'block'
 		startButton.style.display = 'none'
 	}
-})
-
-const questions = data
-	.map((q) => {
-		if (!q.body) {
-			return new Question(q.topic, q.head, q.options, q.correct_answer)
-		}
-		return null
-	})
-	.filter((q) => q !== null)
-
-const quiz = new Quiz(questions, 300, 300)
-quiz.filterQuestionsByTopic('HTML')
-quiz.shuffleQuestions()
-
-quiz.questions.forEach((question, i) => {
-	const li = document.createElement('li')
-
-	const head = document.createElement('h3')
-	head.textContent = question.head
-	li.appendChild(head)
-
-	const optionsList = document.createElement('ul')
-	question.options.forEach((option) => {
-		const optionInput = document.createElement('input')
-		optionInput.type = 'radio'
-		optionInput.name = `question-${i}`
-		optionInput.value = option
-		optionInput.id = i
-		optionInput.classList.add('choice')
-		const optionLabel = document.createElement('label')
-		optionLabel.textContent = option
-		optionLabel.setAttribute('for', optionInput.id)
-
-		optionsList.appendChild(optionInput)
-		optionsList.appendChild(optionLabel)
-		const br = document.createElement('br')
-		optionsList.appendChild(br)
-		optionInput.addEventListener('click', () => {
-			if (optionInput.value === question.correct_answer) {
-				optionsList.classList.add('correct')
-				console.log('correct')
-				optionLabel.style.backgroundColor = '	#7CFC00'
-			} else {
-				optionsList.classList.remove('correct')
-				console.log('wrong')
-				optionLabel.style.backgroundColor = 'tomato'
-			}
-			const inputs = li.querySelectorAll('.choice')
-			// const labels = li.querySelectorAll('label')
-			inputs.forEach((op) => (op.disabled = true))
-		})
-	})
-	li.appendChild(optionsList)
-
-	ul.appendChild(li)
 })
 const answers = document.querySelectorAll('inputs')
