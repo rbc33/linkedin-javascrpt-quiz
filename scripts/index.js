@@ -84,6 +84,8 @@ quiz.questions.forEach((question, i) => {
 		optionInput.classList.add('choice')
 		const optionLabel = document.createElement('label')
 		optionLabel.textContent = option
+		optionLabel.setAttribute('for', optionInput.id)
+
 		optionsList.appendChild(optionInput)
 		optionsList.appendChild(optionLabel)
 		const br = document.createElement('br')
@@ -92,11 +94,14 @@ quiz.questions.forEach((question, i) => {
 			if (optionInput.value === question.correct_answer) {
 				optionsList.classList.add('correct')
 				console.log('correct')
+				optionLabel.style.backgroundColor = '	#7CFC00'
 			} else {
 				optionsList.classList.remove('correct')
 				console.log('wrong')
+				optionLabel.style.backgroundColor = 'tomato'
 			}
 			const inputs = li.querySelectorAll('.choice')
+			// const labels = li.querySelectorAll('label')
 			inputs.forEach((op) => (op.disabled = true))
 		})
 	})
