@@ -11,6 +11,12 @@ body {
 	align-items: center;
 	/* background-color: rgb(14, 81, 180); */
 }
+.title {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 3rem;
+	color: rgb(14, 81, 180);
+}
 
 .central {
 	width: 80%;

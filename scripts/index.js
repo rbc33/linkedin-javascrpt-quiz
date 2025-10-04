@@ -17,6 +17,7 @@ const quiz = new Quiz(questions, 300, 300)
 
 const ul = document.querySelector('.question')
 const topic = document.querySelector('.topics')
+const title = document.querySelector('.title')
 topic.style.display = 'block'
 ul.style.display = 'none'
 
@@ -24,12 +25,10 @@ const selectedTopics = new Set()
 
 const dialog = document.getElementById('favDialog')
 
-// Create start button
 const startButton = document.createElement('button')
 startButton.textContent = 'Start Quiz'
 startButton.classList.add('start-button')
 
-// Add start button after topics
 topic.after(startButton)
 
 const topics = ['CSS', 'HTML', 'JavaScript']
@@ -58,13 +57,9 @@ topics.forEach((t) => {
 })
 let answered = 0
 startButton.addEventListener('click', () => {
-	body.style.backgroundColor = 'rgb(14,81,180)'
-
 	if (selectedTopics.size > 0) {
-		// Filter questions by selected topics
 		quiz.filterAndShuffle(...selectedTopics)
 
-		// Render filtered questions
 		quiz.questions.forEach((question, i) => {
 			const li = document.createElement('li')
 
@@ -119,15 +114,17 @@ startButton.addEventListener('click', () => {
 			ul.appendChild(li)
 		})
 
-		// Toggle visibility
+		title.style.display = 'none'
 		topic.style.display = 'none'
 		ul.style.display = 'block'
 		startButton.style.display = 'none'
+		body.style.backgroundColor = 'rgb(14,81,180)'
 	}
 })
 const resetButton = document.querySelector('#reset')
 resetButton.addEventListener('click', () => {
 	answered = 0
+	title.style.display = 'block'
 	topic.style.display = 'block'
 	ul.style.display = 'none'
 	startButton.style.display = 'block'
