@@ -119,6 +119,8 @@ startButton.addEventListener('click', () => {
 		ul.style.display = 'block'
 		startButton.style.display = 'none'
 		body.style.backgroundColor = 'rgb(14,81,180)'
+	} else {
+		alert('Select at least one topic')
 	}
 })
 const resetButton = document.querySelector('#reset')
