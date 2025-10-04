@@ -96,6 +96,8 @@ quiz.questions.forEach((question, i) => {
 				optionsList.classList.remove('correct')
 				console.log('wrong')
 			}
+			const inputs = li.querySelectorAll('.choice')
+			inputs.forEach((op) => (op.disabled = true))
 		})
 	})
 	li.appendChild(optionsList)
