@@ -144,7 +144,7 @@ startButton.addEventListener('click', () => {
 		ul.style.display = 'block'
 		startButton.style.display = 'none'
 		// body.style.backgroundColor = 'rgb(14,81,180)'
-		body.style.backgroundImage = "url('../images/background.svg')"
+		body.style.backgroundImage = "url('/images/background.svg')"
 	} else {
 		alert('Select at least one topic')
 	}
