@@ -119,11 +119,13 @@ startButton.addEventListener('click', () => {
 					})
 					answered++
 					const correct = document.querySelectorAll('.correct')
-					if (answered === 5) {
-						// if (answered === 25) {  // coment for testing
+					// if (answered === 5) {
+					if (answered === 25) {
+						// coment for testing
 						const p = dialog.querySelector('.result')
-						if (correct.length < 2) {
-							// if (correct.length < 15) { // coment for testing
+						// if (correct.length < 2) {
+						if (correct.length < 15) {
+							// coment for testing
 							p.style.color = 'tomato'
 							p.textContent = `❌Sorry you failed❌, you have ${correct.length} correct answers of 25`
 						} else {
@@ -141,7 +143,7 @@ startButton.addEventListener('click', () => {
 		topic.style.display = 'none'
 		ul.style.display = 'block'
 		startButton.style.display = 'none'
-		body.style.backgroundColor = 'rgb(14,81,180)'
+		// body.style.backgroundColor = 'rgb(14,81,180)'
 		body.style.backgroundImage = "url('../images/background.svg')"
 	} else {
 		alert('Select at least one topic')
