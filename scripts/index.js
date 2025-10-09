@@ -76,14 +76,21 @@ startButton.addEventListener('click', () => {
 				optionInput.value = option
 				optionInput.id = `${index}-${i}`
 				optionInput.classList.add('choice')
+
 				const optionLabel = document.createElement('label')
 				optionLabel.textContent = option
 				optionLabel.setAttribute('for', optionInput.id)
 
 				div.appendChild(optionInput)
 				div.appendChild(optionLabel)
+
 				const br = document.createElement('br')
+
 				div.appendChild(br)
+				if (option === question.correct_answer) {
+					div.classList.add('correct-answer')
+				}
+
 				optionsList.appendChild(div)
 				optionInput.addEventListener('click', () => {
 					if (optionInput.value === question.correct_answer) {
