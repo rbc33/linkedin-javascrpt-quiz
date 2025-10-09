@@ -8,12 +8,6 @@ export class Quiz {
 	}
 
 	filterAndShuffle(...topics) {
-		// Filter by selected topics
-		this.questions = this.questions.filter((question) =>
-			topics.includes(question.topic)
-		)
-
-		// Shuffle using Fisher-Yates
 		const len = this.questions.length
 		for (let i = len - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1))
@@ -22,6 +16,9 @@ export class Quiz {
 				this.questions[i],
 			]
 		}
+		this.questions = this.questions.filter((question) =>
+			topics.includes(question.topic)
+		)
 
 		// Limit to exactly 25 questions
 		this.questions = this.questions.slice(0, 25)

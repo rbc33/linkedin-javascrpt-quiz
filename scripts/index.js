@@ -102,10 +102,15 @@ startButton.addEventListener('click', () => {
 					})
 					answered++
 					const correct = document.querySelectorAll('.correct')
-					if (answered === 25) {
+					if (answered === 5) {
 						// alert(`You have ${correct.length} of 25 and ${answered}`)
 						const p = dialog.querySelector('.result')
-						p.textContent = `You have ${correct.length} correct of 25`
+						if (correct.length < 2) {
+							p.style.color = 'tomato'
+							p.textContent = `❌Sorry you failed❌, you have ${correct.length} correct answers of 25`
+						} else {
+							p.textContent = `🎉Congratulations🎉, you have ${correct.length} correct anwers of 25`
+						}
 						dialog.showModal()
 					}
 				})
