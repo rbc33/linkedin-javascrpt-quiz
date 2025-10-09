@@ -106,8 +106,16 @@ startButton.addEventListener('click', () => {
 					const inputs = li.querySelectorAll('.choice')
 					inputs.forEach((op) => {
 						op.disabled = true
-						if (op.value === question.correct_answer)
+						if (op.value === question.correct_answer) {
 							op.parentNode.style.backgroundColor = '#7CFC00'
+
+							// GSAP
+							gsap.to(op.parentNode, {
+								// scale: 1.04,
+								scaleY: 1.1,
+								scaleX: 1.04,
+							})
+						}
 					})
 					answered++
 					const correct = document.querySelectorAll('.correct')
