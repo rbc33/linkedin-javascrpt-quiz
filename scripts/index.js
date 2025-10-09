@@ -42,6 +42,8 @@ topics.forEach((t) => {
 	input.id = t
 	input.name = t
 	label.textContent = t
+	input.classList.add('topic-checkbox')
+
 	label.setAttribute('for', input.id)
 	topic.appendChild(input)
 	topic.appendChild(label)
@@ -110,9 +112,10 @@ startButton.addEventListener('click', () => {
 					answered++
 					const correct = document.querySelectorAll('.correct')
 					if (answered === 5) {
-						// alert(`You have ${correct.length} of 25 and ${answered}`)
+						// if (answered === 25) {  // coment for testing
 						const p = dialog.querySelector('.result')
 						if (correct.length < 2) {
+							// if (correct.length < 15) { // coment for testing
 							p.style.color = 'tomato'
 							p.textContent = `❌Sorry you failed❌, you have ${correct.length} correct answers of 25`
 						} else {
@@ -131,6 +134,7 @@ startButton.addEventListener('click', () => {
 		ul.style.display = 'block'
 		startButton.style.display = 'none'
 		body.style.backgroundColor = 'rgb(14,81,180)'
+		body.style.backgroundImage = "url('../images/background.svg')"
 	} else {
 		alert('Select at least one topic')
 	}
@@ -142,7 +146,13 @@ resetButton.addEventListener('click', () => {
 	topic.style.display = 'block'
 	ul.style.display = 'none'
 	startButton.style.display = 'block'
-	dialog.close()
 	ul.innerHTML = ''
+	body.style.backgroundImage = null
+
 	body.style.backgroundColor = '#fff'
+
+	const topics = document.querySelectorAll('.topic-checkbox')
+	topics.forEach((t) => (t.checked = false))
+
+	dialog.close()
 })
