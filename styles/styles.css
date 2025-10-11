@@ -19,9 +19,14 @@ body {
 	color: rgb(13, 98, 168);
 }
 
-.central {
+.quiz {
 	width: 80%;
 	/* max-width: 800px; */
+	padding: 2rem;
+}
+.central {
+	background-color: #fff;
+	width: 60%;
 	padding: 2rem;
 }
 
@@ -45,9 +50,7 @@ input[type='checkbox'] {
 }
 .topics {
 	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
+	display: block;
 	margin-bottom: 2rem;
 	font-size: 2rem;
 	justify-self: center;
@@ -88,11 +91,12 @@ input {
 #reset {
 	margin-top: 20px;
 	padding: 10px 20px;
+	width: 12vw;
 	background-color: #007bff;
 	color: white;
 	border: none;
 	border-radius: 5px;
-	cursor: pointer;
+	font-size: 1.25rem;
 }
 .question div {
 	border-radius: 1rem;

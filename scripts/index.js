@@ -16,16 +16,12 @@ const questions = data
 const quiz = new Quiz(questions, 300, 300)
 
 const ul = document.querySelector('.question')
+const quizDiv = document.querySelector('.quiz')
+const centralDiv = document.querySelector('.central')
 const topic = document.querySelector('.topics')
 const title = document.querySelector('.title')
-topic.style.display = 'block'
-ul.style.display = 'none'
-
-// gsap.to(title, {
-// 	scale: 1.4,
-// 	yoyo: true,
-// 	duration: 3,
-// })
+quizDiv.style.display = 'none'
+body.style.backgroundImage = "url('images/background.svg')"
 
 const selectedTopics = new Set()
 
@@ -134,15 +130,17 @@ startButton.addEventListener('click', () => {
 					// if (answered === 5) {
 					if (answered === 25) {
 						// coment for testing
-						const p = dialog.querySelector('.result')
+						const p = dialog.querySelector('.presult')
+						const h1 = dialog.querySelector('.hresult')
 						// if (correct.length < 2) {
 						if (correct.length < 15) {
 							// coment for testing
 							p.style.color = 'tomato'
-							p.textContent = `❌Sorry you failed❌, you have ${correct.length} correct answers of 25`
+							h1.textContent = `❌Sorry you failed❌`
 						} else {
-							p.textContent = `🎉Congratulations🎉, you have ${correct.length} correct anwers of 25`
+							h1.textContent = `🎉Congratulations🎉`
 						}
+						p.textContent = `you have ${correct.length} correct answers of 25`
 						dialog.showModal()
 					}
 				})
@@ -151,10 +149,8 @@ startButton.addEventListener('click', () => {
 			ul.appendChild(li)
 		})
 
-		title.style.display = 'none'
-		topic.style.display = 'none'
-		ul.style.display = 'block'
-		startButton.style.display = 'none'
+		quizDiv.style.display = 'block'
+		centralDiv.style.display = 'none'
 		// body.style.backgroundColor = 'rgb(14,81,180)'
 		body.style.backgroundImage = "url('images/background.svg')"
 	} else {
@@ -164,14 +160,12 @@ startButton.addEventListener('click', () => {
 const resetButton = document.querySelector('#reset')
 resetButton.addEventListener('click', () => {
 	answered = 0
-	title.style.display = 'block'
-	topic.style.display = 'block'
-	ul.style.display = 'none'
-	startButton.style.display = 'block'
+	quizDiv.style.display = 'none'
+	centralDiv.style.display = 'block'
 	ul.innerHTML = ''
-	body.style.backgroundImage = null
+	// body.style.backgroundImage = null
 
-	body.style.backgroundColor = '#fff'
+	// body.style.backgroundColor = '#fff'
 
 	const topics = document.querySelectorAll('.topic-checkbox')
 	topics.forEach((t) => (t.checked = false))
