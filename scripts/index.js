@@ -21,6 +21,12 @@ const title = document.querySelector('.title')
 topic.style.display = 'block'
 ul.style.display = 'none'
 
+// gsap.to(title, {
+// 	scale: 1.4,
+// 	yoyo: true,
+// 	duration: 3,
+// })
+
 const selectedTopics = new Set()
 
 const dialog = document.getElementById('favDialog')
@@ -28,6 +34,12 @@ const dialog = document.getElementById('favDialog')
 const startButton = document.createElement('button')
 startButton.textContent = 'Start Quiz'
 startButton.classList.add('start-button')
+
+gsap.to(startButton, {
+	scale: 1.1,
+	yoyo: true,
+	repeat: -1,
+})
 
 topic.after(startButton)
 
@@ -113,7 +125,7 @@ startButton.addEventListener('click', () => {
 							gsap.to(op.parentNode, {
 								// scale: 1.04,
 								scaleY: 1.1,
-								scaleX: 1.04,
+								scaleX: 1.03,
 							})
 						}
 					})
