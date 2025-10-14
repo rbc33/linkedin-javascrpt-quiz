@@ -67,13 +67,14 @@ input {
 	display: block;
 	margin: 20px auto;
 	width: 12vw;
-	padding: 10px 20px;
+	padding: 1rem 2rem;
 	background-color: rgb(13, 98, 168);
 	color: white;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
 	font-size: 1.25rem;
+	white-space: nowrap;
 }
 
 #favDialog {

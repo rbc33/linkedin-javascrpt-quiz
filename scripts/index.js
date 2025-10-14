@@ -20,12 +20,12 @@ const quizDiv = document.querySelector('.quiz')
 const centralDiv = document.querySelector('.central')
 const topic = document.querySelector('.topics')
 const title = document.querySelector('.title')
+const dialog = document.querySelector('#favDialog')
+
 quizDiv.style.display = 'none'
 body.style.backgroundImage = "url('images/background.svg')"
 
 const selectedTopics = new Set()
-
-const dialog = document.getElementById('favDialog')
 
 const startButton = document.createElement('button')
 startButton.textContent = 'Start Quiz'
@@ -88,7 +88,8 @@ startButton.addEventListener('click', () => {
 				optionInput.classList.add('choice')
 
 				const optionLabel = document.createElement('label')
-				optionLabel.textContent = option
+				const cleanOption = option.replace('`', '').replace('`', '')
+				optionLabel.textContent = cleanOption
 				optionLabel.setAttribute('for', optionInput.id)
 
 				div.appendChild(optionInput)
@@ -127,13 +128,13 @@ startButton.addEventListener('click', () => {
 					})
 					answered++
 					const correct = document.querySelectorAll('.correct')
-					// if (answered === 5) {
-					if (answered === 25) {
+					if (answered === 5) {
+						// if (answered === 25) {
 						// coment for testing
 						const p = dialog.querySelector('.presult')
 						const h1 = dialog.querySelector('.hresult')
-						// if (correct.length < 2) {
-						if (correct.length < 15) {
+						if (correct.length < 2) {
+							// if (correct.length < 15) {
 							// coment for testing
 							p.style.color = 'tomato'
 							h1.textContent = `❌Sorry you failed❌`
