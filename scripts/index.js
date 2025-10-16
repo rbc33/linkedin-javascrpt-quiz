@@ -128,13 +128,13 @@ startButton.addEventListener('click', () => {
 					})
 					answered++
 					const correct = document.querySelectorAll('.correct')
-					if (answered === 5) {
-						// if (answered === 25) {
+					// if (answered === 5) {
+					if (answered === 25) {
 						// coment for testing
 						const p = dialog.querySelector('.presult')
 						const h1 = dialog.querySelector('.hresult')
-						if (correct.length < 2) {
-							// if (correct.length < 15) {
+						// if (correct.length < 2) {
+						if (correct.length < 15) {
 							// coment for testing
 							p.style.color = 'tomato'
 							h1.textContent = `❌Sorry you failed❌`
