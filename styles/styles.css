@@ -40,7 +40,7 @@ body {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	background-color: #fff;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 }
 input[type='checkbox'] {
 	transform: scale(2);
